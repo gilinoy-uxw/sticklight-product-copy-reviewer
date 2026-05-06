@@ -1,0 +1,296 @@
+{
+  "schema_version": "1.0",
+  "source": "Sticklight Brand Voice & Tone Guidelines",
+  "rules": [
+    {
+      "id": "voice-01",
+      "category": "core_voice",
+      "rule": "Write with grounded precision: balance visionary creative feel with tangible, production-ready credibility.",
+      "rationale": "The brand should sound like a sharp, responsive partner — confident and clear, not inflated or vague.",
+      "example": {
+        "good": "Build websites, apps, and stores in minutes.",
+        "bad": "We're reimagining what's possible for the future of the web."
+      }
+    },
+    {
+      "id": "voice-02",
+      "category": "core_voice",
+      "rule": "Write with empowering copy: keep the creator in command. The user leads; Sticklight follows.",
+      "rationale": "Copy should respect the creator's agency and unique fingerprint. Sticklight is a collaborative partner, not an autonomous decision-maker.",
+      "example": {
+        "good": "You lead. Sticklight follows.",
+        "bad": "Sticklight can do what designers used to."
+      }
+    },
+    {
+      "id": "voice-03",
+      "category": "core_voice",
+      "rule": "Write in the language of builders: use the vocabulary of deliverables and build processes.",
+      "rationale": "The brand should sound production-ready. Speak in the terms builders recognize: components, deployment, breakpoints, refactoring.",
+      "example": {
+        "good": "Refine the layout, deploy your project, and ship to a custom domain.",
+        "bad": "Make things look nice and share them online."
+      }
+    },
+    {
+      "id": "style-01",
+      "category": "grammar_style",
+      "rule": "Use active voice. Identify the actor and the action clearly.",
+      "rationale": "Active voice makes actions shorter, clearer, and easier to scan.",
+      "example": {
+        "good": "Layout generated.",
+        "bad": "I have generated the layout."
+      }
+    },
+    {
+      "id": "style-02",
+      "category": "grammar_style",
+      "rule": "Use sentence case for all headings and UI labels.",
+      "rationale": "Sentence case signals a clean, modern, function-first interface.",
+      "example": {
+        "good": "Site settings",
+        "bad": "Site Settings"
+      }
+    },
+    {
+      "id": "style-03",
+      "category": "grammar_style",
+      "rule": "Be concise. Skip the fluff and jargon.",
+      "rationale": "Efficiency and cleanliness are core brand values. Every word should earn its place.",
+      "example": {
+        "good": "Add a widget to your project.",
+        "bad": "You can easily and quickly add a beautiful widget to your amazing project."
+      }
+    },
+    {
+      "id": "style-04",
+      "category": "grammar_style",
+      "rule": "Avoid adjective fluff and empty intensifiers like 'stunning', 'amazing', or 'powerful'.",
+      "rationale": "Filler adjectives add noise without adding meaning. Let the product speak for itself.",
+      "example": {
+        "good": "Build responsive layouts.",
+        "bad": "Build stunning, amazing, powerful responsive layouts."
+      }
+    },
+    {
+      "id": "style-05",
+      "category": "grammar_style",
+      "rule": "Use minimal emojis — only as status indicators. No emojis in alert or accountability states.",
+      "rationale": "Emojis should signal state (e.g., success), not decorate copy or soften errors.",
+      "example": {
+        "good": "Green checkmarks in Satisfaction states only.",
+        "bad": "Oops! 😅 Something went wrong. Don't worry though! 🙏"
+      }
+    },
+    {
+      "id": "style-06",
+      "category": "grammar_style",
+      "rule": "Avoid excessive apologies. Acknowledge errors and provide the fix.",
+      "rationale": "The brand takes accountability without over-explaining or sounding anxious.",
+      "example": {
+        "good": "Something went wrong. Try again.",
+        "bad": "We're so sorry! We sincerely apologize for this terrible inconvenience."
+      }
+    },
+    {
+      "id": "tone-01",
+      "category": "tone",
+      "rule": "Default to a functional tone: concise and action-oriented. Used during active building.",
+      "rationale": "Most product interactions should feel fast and efficient, not conversational or ceremonial.",
+      "example": {
+        "good": "Select an element to start editing.",
+        "bad": "Let's jump in together and start making something awesome!"
+      }
+    },
+    {
+      "id": "tone-02",
+      "category": "tone",
+      "rule": "Use a collaborative and validating tone during brainstorming or early planning: open, inquisitive, and empowering.",
+      "rationale": "When users are exploring intent, copy should invite and expand, not direct or constrain.",
+      "example": {
+        "good": "What would you like to build today?",
+        "bad": "Click here to start. Choose a template."
+      }
+    },
+    {
+      "id": "tone-03",
+      "category": "tone",
+      "rule": "Use a diagnostic tone in error states: precise, technical, and solution-focused.",
+      "rationale": "Errors should explain what happened and what the user can do next — not apologize or dramatize.",
+      "example": {
+        "good": "The integration couldn't connect. Check your API key and try again.",
+        "bad": "Uh oh! Something went wrong. We're on it!"
+      }
+    },
+    {
+      "id": "tone-04",
+      "category": "tone",
+      "rule": "Use a systemic, formal, and clear tone for settings and policy copy.",
+      "rationale": "Settings and policy contexts require precision and trust, not warmth or creativity.",
+      "example": {
+        "good": "Deleting this project is permanent and cannot be undone.",
+        "bad": "Heads up — once you delete this, it's gone for good!"
+      }
+    },
+    {
+      "id": "interaction-01",
+      "category": "interaction",
+      "rule": "Briefly echo complex instructions to ensure alignment. Perform simple tasks immediately.",
+      "rationale": "This 'Lead/Follow' protocol helps users stay in control without unnecessary back-and-forth.",
+      "example": {
+        "good": "Got it — I'll redesign the hero section with your brand colors and add a contact form below.",
+        "bad": "Can you tell me more about what you want? What colors? What kind of form?"
+      }
+    },
+    {
+      "id": "interaction-02",
+      "category": "interaction",
+      "rule": "Only ask questions if the build is genuinely at risk. Apply industry-standard defaults for under-specified prompts.",
+      "rationale": "Maintain momentum. Halting with questions for minor decisions stalls the creative process.",
+      "example": {
+        "good": "I've added a hero section with a standard layout. Let me know if you'd like to adjust it.",
+        "bad": "Before I start, can you tell me: What layout? What image? What headline? What CTA text?"
+      }
+    },
+    {
+      "id": "interaction-03",
+      "category": "interaction",
+      "rule": "Assume the user is an expert. Use industry-standard terminology without defining it unless asked.",
+      "rationale": "The Expert Handshake: professionals expect to be treated as peers, not talked down to.",
+      "example": {
+        "good": "Adjust the rem values for consistent spacing across breakpoints.",
+        "bad": "rem means 'relative em' — it's a unit for font sizes and spacing in CSS..."
+      }
+    },
+    {
+      "id": "sticklight-vs-ai-01",
+      "category": "product_language",
+      "rule": "Use Sticklight when referring to the product, platform, interface, or overall experience. Use AI when referring to the intelligence behind the output.",
+      "rationale": "This distinction keeps copy precise and prevents both over-humanizing the AI and making the product feel cold.",
+      "example": {
+        "good": "Use Skills to teach the AI how to handle repeatable tasks. Sticklight will follow them on every new project.",
+        "bad": "Use Skills to teach Sticklight how to think. The AI will handle everything from here."
+      }
+    },
+    {
+      "id": "sticklight-vs-ai-02",
+      "category": "product_language",
+      "rule": "Do not refer to Sticklight as a 'bot', 'assistant', or 'agent' unless officially supported as a product term.",
+      "rationale": "These terms reduce Sticklight to a tool and undermine the collaborative partner positioning.",
+      "example": {
+        "good": "Open the Chat panel to continue working with Sticklight.",
+        "bad": "Chat with the AI bot to refine your project."
+      }
+    },
+    {
+      "id": "cta-01",
+      "category": "ctas_and_labels",
+      "rule": "Use Create as the primary CTA for starting project creation. Avoid Generate, Make, or Produce.",
+      "rationale": "Create signals intentionality and ownership. Generate makes the product feel like a one-shot AI output.",
+      "example": {
+        "good": "Create",
+        "bad": "Generate"
+      }
+    },
+    {
+      "id": "cta-02",
+      "category": "ctas_and_labels",
+      "rule": "Keep CTA labels short, direct, and action-oriented.",
+      "rationale": "UI labels should be immediately scannable and trigger a clear mental model of the action.",
+      "example": {
+        "good": "Add widget",
+        "bad": "Click here to add a new widget to your project"
+      }
+    },
+    {
+      "id": "cta-03",
+      "category": "ctas_and_labels",
+      "rule": "Use Restore this version for version restoration actions. Make the impact of destructive actions clear.",
+      "rationale": "Users need to understand consequences before acting on irreversible changes.",
+      "example": {
+        "good": "Restore this version. This will replace your current project state.",
+        "bad": "Go back to this version."
+      }
+    },
+    {
+      "id": "ux-01",
+      "category": "ux_writing",
+      "rule": "Write empty states as invitations to action, not as absence of content.",
+      "rationale": "Empty states are an opportunity to guide users forward, not dead ends.",
+      "example": {
+        "good": "No projects yet. Describe what you want to build and Sticklight will create it.",
+        "bad": "No projects found."
+      }
+    },
+    {
+      "id": "ux-02",
+      "category": "ux_writing",
+      "rule": "Keep tooltips and instructional copy focused on outcome, not UI mechanics.",
+      "rationale": "Outcome-focused copy is more useful than describing where to click.",
+      "example": {
+        "good": "Plan your next steps before building.",
+        "bad": "Click this button to enter Plan mode."
+      }
+    },
+    {
+      "id": "ux-03",
+      "category": "ux_writing",
+      "rule": "Write onboarding copy that builds confidence without over-explaining. One idea per step.",
+      "rationale": "Cognitive overload in onboarding causes drop-off. One clear message per step keeps momentum.",
+      "example": {
+        "good": "Describe the website you want to create.",
+        "bad": "To get started, you'll want to think about the type of website you'd like to create, then describe it in the box below, and Sticklight will use its AI to generate a first version for you to review."
+      }
+    },
+    {
+      "id": "ux-04",
+      "category": "ux_writing",
+      "rule": "Use parallel structure for lists, tabs, and navigation items.",
+      "rationale": "Parallelism makes scanning faster and patterns easier to recognize.",
+      "example": {
+        "good": "Preview / Edit / Code / Database",
+        "bad": "Preview / Editing mode / See code / Your data"
+      }
+    },
+    {
+      "id": "ux-05",
+      "category": "ux_writing",
+      "rule": "Write error messages that explain what happened and what the user can do next.",
+      "rationale": "Errors without next steps leave users stuck. Both the cause and the resolution should be clear.",
+      "example": {
+        "good": "Couldn't publish. Check your domain settings and try again.",
+        "bad": "An error occurred."
+      }
+    },
+    {
+      "id": "ux-06",
+      "category": "ux_writing",
+      "rule": "Distinguish between modes clearly in copy. Each mode has a specific name — use it consistently.",
+      "rationale": "Plan mode, Focus mode, and Edit mode have distinct functions. Inconsistent naming breaks user mental models.",
+      "example": {
+        "good": "Exit Plan mode to start building.",
+        "bad": "Leave this mode to continue."
+      }
+    },
+    {
+      "id": "ux-07",
+      "category": "ux_writing",
+      "rule": "Avoid 'just', 'simply', or 'easy' in instructional copy.",
+      "rationale": "These words minimize the user's effort and can feel dismissive when a task is actually complex.",
+      "example": {
+        "good": "Add a widget to your project.",
+        "bad": "Just add a widget — it's super easy!"
+      }
+    },
+    {
+      "id": "ux-08",
+      "category": "ux_writing",
+      "rule": "Use second person ('you', 'your') to address the user directly.",
+      "rationale": "Direct address keeps copy personal and action-oriented without sounding like documentation.",
+      "example": {
+        "good": "Your project is ready.",
+        "bad": "The project has been created successfully."
+      }
+    }
+  ]
+}
