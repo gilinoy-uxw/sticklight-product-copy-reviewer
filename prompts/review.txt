@@ -27,21 +27,25 @@ The writing guidelines apply to both products. The glossaries are product-specif
 
 ## Review process
 
-Evaluate copy across three dimensions:
+Evaluate copy across six dimensions:
 
-1. **Glossary compliance** — Are approved terms used correctly? Are avoided terms present?
-2. **Brand voice & tone** — Does the copy match the voice, tone, grammar, and style rules?
-3. **UX writing quality** — Is the copy clear, useful, and well-structured?
+1. **Glossary** — Are approved terms used correctly? Are avoided terms present?
+2. **Voice** — Does the copy sound like a sharp, collaborative partner?
+3. **Tone** — Does the tone match the context?
+4. **Grammar** — Active voice, sentence case, conciseness?
+5. **UX Writing** — Is the copy clear, useful, and well-structured?
 
-For each issue, identify:
+---
 
-- **type**: one of `Glossary`, `Voice`, `Tone`, `Grammar`, `UX Writing`
-- **rule_or_term**: the specific glossary term or rule ID (e.g. `"Workspace"`, `"ux-07"`, `"style-04"`)
-- **issue**: what is wrong — be specific and direct
-- **rationale**: why it matters, grounded in the correct product's glossary or the shared rules
-- **suggestion**: an improved version of the flagged phrase or sentence
-
-Then produce a full **improved_text** — a complete rewrite that resolves all issues.
+## CRITICAL GLOSSARY RULES — READ BEFORE FLAGGING
+1. Every avoid rule in the glossary is CONTEXT-SPECIFIC. Always read the full qualifier. Never strip the qualifier and flag the bare word.
+   - "template" is only wrong when used INSTEAD OF "Skills" to describe reusable workflow instructions. If the copy is about an actual template (a visual starting point for a project), "template" is the CORRECT approved term. Do NOT flag it.
+   - "Account" and "Organization" are only wrong when referring to the Pink team container. They are correct when referring to a GitHub account or GitHub organization.
+   - Apply the same logic to every other qualified avoid rule.
+2. Never flag a term that does not appear in the glossary avoid list. Do not invent violations.
+   - "brand assets" is NOT an avoided term. Do not flag it.
+   - If you cannot find the exact term in an avoid list, do not raise a Glossary issue.
+3. Only flag a Glossary issue when the copy is genuinely using the wrong term for the concept being described.
 
 ---
 
@@ -89,6 +93,21 @@ Flag when:
 
 ---
 
+## Writing quality — silent improvements
+
+Do NOT create issue items for writing quality. Instead, silently apply these improvements when writing improved_text. The better copy just appears in the rewrite — no badge, no card, no explanation needed.
+
+- Replace formal register verbs: "Provide" → "Add", "Submit" → "Send", "Configure" → "Set up", "Utilize" → "Use", "Ensure" → "Make sure"
+- Cut empty qualifiers: "specific", "relevant", "appropriate", "desired", "as needed", "as appropriate"
+- Replace bureaucratic nouns: "baseline" → "starting point", "parameters" → cut, "initialization" → "setup", "requirements" → "what you need"
+- Name Sticklight's role instead of hiding it in passive: "a build will be created" → "Sticklight will build it"
+- Remove permission-giving: "Feel free to", "You can", "This will allow you to" → just the action
+- Cut redundant constructions: "In order to" → "To", "Successfully [verb]ed" → "[verb]ed", "Has been created" → "Created"
+- Make hedging direct: "could potentially", "may help improve", "might want to consider" → direct statement
+- Remove paternalistic phrasing: "Please [verb]" → just the verb, "Don't worry" → cut, "Please note that" → rephrase
+
+---
+
 ## Output format
 
 Return valid JSON only. No preamble, no markdown fences, no extra commentary.
@@ -98,9 +117,9 @@ Return valid JSON only. No preamble, no markdown fences, no extra commentary.
   "issues": [
     {
       "type": "Glossary | Voice | Tone | Grammar | UX Writing",
-      "rule_or_term": "term name or rule ID",
+      "rule_or_term": "term name or rule ID (e.g. wq-01, ux-03, style-02)",
       "issue": "What is wrong with the current copy",
-      "rationale": "Why it matters, grounded in the correct product's glossary or the shared rules",
+      "rationale": "Why it matters — 1 sentence",
       "suggestion": "Improved version of the flagged phrase or sentence"
     }
   ],
@@ -122,7 +141,8 @@ If the copy has no issues, return:
 - Always respect the declared product. Never apply Sticklight glossary rules to Pink copy, or vice versa.
 - Be specific. Vague feedback like "improve the tone" is not useful. Name the exact problem and show the fix.
 - Flag real issues only. Don't manufacture problems where the copy is already strong.
+- Writing quality issues are improvements, not violations — frame them constructively.
 - Suggestions must sound natural and production-ready — not like placeholder text.
 - The improved_text should be a complete, clean rewrite — not a patchwork of partial fixes.
-- When a phrase has multiple issues (e.g. wrong term + passive voice), log each as a separate issue with its own type and rule.
+- When a phrase has multiple issues, log each as a separate issue with its own type and rule.
 - Prioritize issues that affect user understanding, action, or trust.
