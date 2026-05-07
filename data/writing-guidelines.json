@@ -291,6 +291,172 @@
         "good": "Your project is ready.",
         "bad": "The project has been created successfully."
       }
+    },
+    {
+      "id": "wq-01",
+      "category": "writing_quality",
+      "rule": "Use natural, conversational action verbs. Replace formal register verbs with plain alternatives.",
+      "rationale": "Formal verbs signal a system talking at a user, not a product working with a creator.",
+      "patterns": {
+        "avoid": [
+          "Provide",
+          "Submit",
+          "Configure",
+          "Utilize",
+          "Define",
+          "Specify",
+          "Ensure"
+        ],
+        "prefer": [
+          "Add",
+          "Send",
+          "Set up",
+          "Use",
+          "Set",
+          "Choose",
+          "Make sure"
+        ]
+      },
+      "example": {
+        "bad": "Provide your brand assets and requirements to configure the build.",
+        "good": "Add your brand assets and tell Sticklight what you need."
+      }
+    },
+    {
+      "id": "wq-02",
+      "category": "writing_quality",
+      "rule": "Cut empty qualifiers. Words like 'specific', 'relevant', 'appropriate', 'desired', 'necessary', 'as needed', and 'as appropriate' add length without meaning.",
+      "rationale": "Empty qualifiers are a hallmark of generated or formal copy. They dilute clarity without adding information.",
+      "patterns": {
+        "avoid": [
+          "specific",
+          "relevant",
+          "appropriate",
+          "desired",
+          "necessary",
+          "as needed",
+          "as desired",
+          "as appropriate"
+        ]
+      },
+      "example": {
+        "bad": "Provide the relevant requirements to generate a build tailored to your specific context.",
+        "good": "Add your requirements and Sticklight will tailor the project to your context."
+      }
+    },
+    {
+      "id": "wq-03",
+      "category": "writing_quality",
+      "rule": "Replace bureaucratic nouns with plain alternatives. Avoid: baseline, requirements, parameters, initialization, configuration, customization.",
+      "rationale": "These nouns belong in documentation or technical specs, not in product copy aimed at creators.",
+      "patterns": {
+        "avoid": [
+          "baseline",
+          "parameters",
+          "initialization",
+          "configuration",
+          "customization",
+          "requirements (when 'what you need' is clearer)"
+        ],
+        "prefer": [
+          "starting point",
+          "settings",
+          "setup",
+          "edits or changes",
+          "what you need"
+        ]
+      },
+      "example": {
+        "bad": "Set this template as your project's baseline.",
+        "good": "Start from this template and make it your own."
+      }
+    },
+    {
+      "id": "wq-04",
+      "category": "writing_quality",
+      "rule": "Apply the Lead/Follow frame when describing what Sticklight does. When the user acts and Sticklight responds, name both sides explicitly.",
+      "rationale": "Hiding Sticklight's role behind passive constructions or vague outcomes makes copy feel mechanical and removes the sense of collaboration.",
+      "example": {
+        "bad": "A build will be created tailored to your context.",
+        "good": "Sticklight will build a project tailored to your context."
+      }
+    },
+    {
+      "id": "wq-05",
+      "category": "writing_quality",
+      "rule": "Remove unnecessary permission-giving. Don't tell users they 'can' or 'are able to' do something — just describe the action.",
+      "rationale": "Permission-giving language is paternalistic and adds a step between the user and the action.",
+      "patterns": {
+        "avoid": [
+          "Feel free to",
+          "You can",
+          "You are able to",
+          "This will allow you to",
+          "This enables you to"
+        ]
+      },
+      "example": {
+        "bad": "Feel free to add your brand assets. You can also specify your requirements.",
+        "good": "Add your brand assets and requirements."
+      }
+    },
+    {
+      "id": "wq-06",
+      "category": "writing_quality",
+      "rule": "Cut redundant constructions. Replace multi-word fillers with the single word or phrase that does the same job.",
+      "rationale": "Redundant constructions are a reliable signal of generated or bureaucratic copy.",
+      "patterns": {
+        "avoid": [
+          "In order to → To",
+          "At this point in time → Now",
+          "Successfully [verb]ed → [verb]ed (e.g. 'Saved', not 'Successfully saved')",
+          "This will help you to → cut",
+          "Has been created → Created",
+          "Is designed to → just say what it does",
+          "In the event that → If"
+        ]
+      },
+      "example": {
+        "bad": "In order to create a build, provide your requirements. The project has been successfully created.",
+        "good": "Add your requirements. Project created."
+      }
+    },
+    {
+      "id": "wq-07",
+      "category": "writing_quality",
+      "rule": "Remove hedging language. Phrases like 'may', 'might', 'could potentially', and 'might want to consider' weaken statements that should be direct.",
+      "rationale": "Hedging makes the product sound uncertain. Sticklight copy should be confident and direct.",
+      "patterns": {
+        "avoid": [
+          "could potentially",
+          "may help improve",
+          "might want to consider",
+          "you may wish to"
+        ]
+      },
+      "example": {
+        "bad": "Adding a brand kit may help improve the output and could potentially make your project look more consistent.",
+        "good": "Add a brand kit to keep your project visually consistent."
+      }
+    },
+    {
+      "id": "wq-08",
+      "category": "writing_quality",
+      "rule": "Remove paternalistic or over-deferential phrasing. Avoid 'Please', 'Please note that', 'Don't worry', and similar.",
+      "rationale": "This tone treats users as novices who need reassurance. Sticklight assumes expertise and mutual respect.",
+      "patterns": {
+        "avoid": [
+          "Please [verb]",
+          "Please note that",
+          "Don't worry",
+          "No worries",
+          "Note that (for non-critical information)"
+        ]
+      },
+      "example": {
+        "bad": "Please enter your API key. Don't worry, you can always change this later.",
+        "good": "Enter your API key. You can update it any time in Settings."
+      }
     }
   ]
 }
