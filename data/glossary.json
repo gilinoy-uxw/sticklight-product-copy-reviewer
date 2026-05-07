@@ -546,6 +546,7 @@
     {
       "term": "Brand",
       "approved": ["Brand", "brand kit (for the visual identity set)"],
+      "also_allowed": ["brand assets (when referring to uploaded or provided brand materials)", "colors", "fonts", "color palette (when referring specifically to colors)"],
       "avoid": ["Theme", "Style kit", "Design system (when referring to the selectable UI feature)", "Color kit", "Palette (when referring to the full kit)", "Look and feel (as a UI label)"],
       "definition": "The Sticklight area for defining a project's visual identity. Users open Brand to choose or customize a brand kit — the set of colors, fonts, and styling choices that guide how Sticklight designs the project.",
       "usage": {
