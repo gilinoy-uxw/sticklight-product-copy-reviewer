@@ -1,0 +1,445 @@
+{
+  "schema_version": "1.0",
+  "source": "Pink Brand Glossary",
+  "product": "Pink",
+  "product_description": "Sticklight's production-grade product for converting, hosting, and delivering AI-built apps. Designed for builders coming from tools like Lovable, Cursor, and Bolt.",
+  "clash_notes": [
+    "Workspace means the account/team container in Pink — NOT the creation start screen (which is the Sticklight builder meaning)",
+    "Project means the managed unit being converted, hosted, and deployed in Pink — NOT a saved builder output (which is the Sticklight builder meaning)",
+    "Build is a specific technical pipeline step name in Pink — NOT flexible supporting copy alongside Create (which is the Sticklight builder meaning)"
+  ],
+  "terms": [
+    {
+      "term": "Pink",
+      "approved": ["Pink"],
+      "avoid": [
+        "Production mode",
+        "Hosting layer",
+        "Deployment tool",
+        "Backend",
+        "Infra layer"
+      ],
+      "definition": "Sticklight's production-grade product for converting, hosting, and delivering AI-built apps. Pink is designed for builders coming from tools like Lovable, Cursor, and Bolt. It handles conversion, hosting, and full-stack setup in one place so users don't need to assemble production infrastructure themselves.",
+      "usage": {
+        "when_to_use": [
+          "When referring to the Pink product or product area",
+          "When describing the production-ready next step after building an app elsewhere",
+          "In product, onboarding, and positioning copy"
+        ],
+        "when_not_to_use": [
+          "When referring generally to Sticklight as a whole",
+          "When referring to a specific project, environment, or deployment",
+          "As a generic term for hosting or infrastructure"
+        ],
+        "notes": [
+          "Treat Pink as a product name",
+          "Use it when the product context matters, not as a substitute for technical terms like deployment or environment"
+        ]
+      },
+      "examples": {
+        "correct": "Pink helps you take AI-built apps live in one place.",
+        "avoid": "Use Pink as your backend."
+      }
+    },
+    {
+      "term": "Workspace",
+      "approved": ["Workspace"],
+      "avoid": [
+        "Account",
+        "Organization",
+        "Team space",
+        "Dashboard",
+        "Project (when referring to the higher-level container)"
+      ],
+      "definition": "The shared container where users manage projects, environments, team settings, and billing in Pink. A workspace groups the people, projects, and operational settings that belong together.",
+      "clash_warning": "In the Sticklight builder, Workspace means the creation start screen. In Pink, Workspace means the account/team container. These are different concepts. Be explicit in documentation when both products appear together.",
+      "usage": {
+        "when_to_use": [
+          "When referring to the account-level or team-level area in Pink",
+          "In navigation, settings, billing, and team management copy",
+          "When describing where multiple projects are organized"
+        ],
+        "when_not_to_use": [
+          "When referring to a single project",
+          "When referring to the project creation wizard",
+          "When referring to the Sticklight builder start screen"
+        ],
+        "notes": [
+          "In Pink, Workspace means the account/container layer",
+          "This is different from the main Sticklight builder use of Workspace as the project-starting surface",
+          "Be explicit in documentation when both products appear together"
+        ]
+      },
+      "examples": {
+        "correct": ["Manage team access from your Workspace settings.", "Projects belong to a workspace."],
+        "avoid": "Open the workspace to start prompting your site."
+      }
+    },
+    {
+      "term": "Project",
+      "approved": ["Project"],
+      "avoid": [
+        "App (when referring to the managed unit in Pink)",
+        "Deployment",
+        "Repository",
+        "Site (when referring to the Pink-managed unit)"
+      ],
+      "definition": "The main unit users create and manage in Pink. A project represents the app being converted, hosted, configured, and deployed. It contains its environments, deployments, domains, and settings.",
+      "clash_warning": "In the Sticklight builder, Project means a saved digital product (website, app, store). In Pink, Project means the managed container for one app being hosted and deployed. The term overlaps but the context is different.",
+      "usage": {
+        "when_to_use": [
+          "When referring to the main managed item in Pink",
+          "In setup flows, settings, deployments, and environments",
+          "When describing the user's app as it exists inside Pink"
+        ],
+        "when_not_to_use": [
+          "When referring specifically to the source code repository",
+          "When referring specifically to one environment",
+          "When referring to the workspace that contains multiple projects"
+        ],
+        "notes": [
+          "A project is the managed container for one app in Pink",
+          "A project can have multiple environments and deployments"
+        ]
+      },
+      "examples": {
+        "correct": ["Create a new project.", "Open the project settings."],
+        "avoid": "Create a new deployment."
+      }
+    },
+    {
+      "term": "Source",
+      "approved": ["Source"],
+      "avoid": [
+        "Import source",
+        "App source",
+        "Input",
+        "Origin (as the main UI term)"
+      ],
+      "definition": "The starting point Pink uses to create a new project. A source can be a connected Git provider or a pasted repository URL.",
+      "usage": {
+        "when_to_use": [
+          "In the first step of project setup",
+          "When referring to where Pink gets the app from",
+          "When describing project creation and import flows"
+        ],
+        "when_not_to_use": [
+          "When referring specifically to a Git repository — use repository",
+          "When referring to source code in general",
+          "When referring to build output or deployed infrastructure"
+        ],
+        "notes": [
+          "Source is the broader concept",
+          "Repository is the specific code location users connect or paste",
+          "Use Source as the step name; use repository in supporting explanation"
+        ]
+      },
+      "examples": {
+        "correct": ["Choose a source to get started.", "Connect your Git account or paste a repository URL as the source."],
+        "avoid": "Choose a source code."
+      }
+    },
+    {
+      "term": "Repository",
+      "approved": ["Repository"],
+      "avoid": [
+        "Repo (in user-facing copy unless space is limited)",
+        "Codebase (when referring to the connected Git location)",
+        "Project (when referring specifically to the Git location)"
+      ],
+      "definition": "The Git repository Pink connects to in order to analyze, build, and deploy a project. A repository contains the project's source code and is typically connected through GitHub or provided via URL.",
+      "usage": {
+        "when_to_use": [
+          "When referring to the connected code repository",
+          "In setup flows, build flows, and settings",
+          "When users connect GitHub or paste a repository URL"
+        ],
+        "when_not_to_use": [
+          "When referring to the Pink project as a whole",
+          "When referring to a deployment or environment",
+          "When referring generally to source input — use source"
+        ],
+        "notes": [
+          "Use repository in explanatory copy",
+          "Repo may be acceptable in highly technical, space-limited surfaces only",
+          "Keep the distinction clear: repository = code source; project = managed app in Pink"
+        ]
+      },
+      "examples": {
+        "correct": ["Paste repository URL.", "Connect a repository to create your project."],
+        "avoid": "Paste project URL."
+      }
+    },
+    {
+      "term": "Production environment",
+      "approved": ["Production environment"],
+      "avoid": [
+        "Live mode",
+        "Production deployment (when referring to the environment itself)",
+        "Main environment (unless officially named that way)"
+      ],
+      "definition": "The live environment used to run the production version of a project. The production environment includes the connected resources, variables, and domain configuration used by the live app.",
+      "usage": {
+        "when_to_use": [
+          "When referring specifically to the live environment",
+          "In environment pages, deployment flows, and operational copy",
+          "When users configure production resources or variables"
+        ],
+        "when_not_to_use": [
+          "When referring to the live status badge alone",
+          "When referring to a single release event — use deployment",
+          "When referring to the whole project"
+        ],
+        "notes": [
+          "Use production environment for the configured live runtime context",
+          "Distinguish from deployment, which is the act/result of releasing code"
+        ]
+      },
+      "examples": {
+        "correct": ["Production environment", "Connected resources and custom variables for this environment."],
+        "avoid": "Production deployment settings."
+      }
+    },
+    {
+      "term": "Deployment",
+      "approved": ["Deployment"],
+      "avoid": [
+        "Publish",
+        "Release (unless intentionally used in a broader product narrative)",
+        "Go live (as the primary system term)",
+        "Build (when referring to the delivered result)"
+      ],
+      "definition": "A release of a project to an environment in Pink. A deployment is the result of Pink building and delivering a version of the project so it can run in its target environment.",
+      "usage": {
+        "when_to_use": [
+          "When referring to release history or operational status",
+          "In navigation, deployment logs, and redeploy actions",
+          "When describing the act of delivering an updated version of a project"
+        ],
+        "when_not_to_use": [
+          "When referring to the project itself",
+          "When referring to the build process alone",
+          "When referring to the environment that receives the deployment"
+        ],
+        "notes": [
+          "Use deployment as the primary production term",
+          "Avoid publish here — Pink is an app hosting/deployment product, not a website publisher",
+          "A deployment happens to an environment"
+        ]
+      },
+      "examples": {
+        "correct": ["View Deployments.", "Redeploy this project."],
+        "avoid": "Publish this deployment."
+      }
+    },
+    {
+      "term": "Custom domain",
+      "approved": ["Custom domain", "domain (when shorter form is unambiguous)"],
+      "avoid": [
+        "Domain (when the distinction matters)",
+        "Website URL",
+        "Public URL (as the primary term)",
+        "Connected URL"
+      ],
+      "definition": "A user-owned domain connected to a Pink project. A custom domain lets users serve their project on their own branded web address instead of a platform-provided domain.",
+      "usage": {
+        "when_to_use": [
+          "In domain setup and settings",
+          "When users connect or manage their own domain",
+          "When distinguishing platform domains from user-owned domains"
+        ],
+        "when_not_to_use": [
+          "When referring to the default platform domain",
+          "When referring generally to any URL without domain context"
+        ],
+        "notes": [
+          "Use custom domain when the branded, user-owned nature matters",
+          "Use domain only when the shorter term is sufficient and unambiguous"
+        ]
+      },
+      "examples": {
+        "correct": ["Connect a custom domain.", "Open Custom domain settings."],
+        "avoid": "Connect your website URL."
+      }
+    },
+    {
+      "term": "Resources & integrations",
+      "approved": ["Resources & integrations"],
+      "avoid": [
+        "Services",
+        "Connections",
+        "Dependencies",
+        "Infrastructure (as the main UI term)"
+      ],
+      "definition": "Connected services and external resources that provide functionality, data, or secrets to an environment. These can include databases, APIs, and other linked services needed for the project to run.",
+      "usage": {
+        "when_to_use": [
+          "As the section label for linked services in an environment",
+          "When referring to managed external services and connected resources",
+          "In environment configuration flows"
+        ],
+        "when_not_to_use": [
+          "When referring only to variables — use custom variables",
+          "When referring only to user-facing integrations in the builder product"
+        ],
+        "notes": [
+          "Good umbrella term for infra-style connections",
+          "Avoid overusing integrations alone if the section also includes infrastructure resources like databases"
+        ]
+      },
+      "examples": {
+        "correct": ["Resources & integrations", "Managed and linked services that supply connection details or secrets."],
+        "avoid": "Services"
+      }
+    },
+    {
+      "term": "Custom variables",
+      "approved": ["Custom variables"],
+      "avoid": [
+        "Envs",
+        "Environment values",
+        "Parameters",
+        "Secrets (when referring to the whole set)"
+      ],
+      "definition": "Project or environment-specific key-value variables used to configure how an app runs. Custom variables can include environment settings, API endpoints, and other configuration values.",
+      "usage": {
+        "when_to_use": [
+          "When referring to user-added variables in the environment",
+          "In environment setup, import, and editing flows",
+          "When describing .env import or manual variable entry"
+        ],
+        "when_not_to_use": [
+          "When referring only to sensitive values — use secrets if that becomes a supported term",
+          "When referring generally to resources or integrations"
+        ],
+        "notes": [
+          "Use custom variables as the user-facing term",
+          "You can mention .env in supporting copy, but don't replace the main term with jargon",
+          "If Secrets is later introduced as a separate concept, define the distinction clearly"
+        ]
+      },
+      "examples": {
+        "correct": ["Add custom variables for this environment.", "Import .env file."],
+        "avoid": "Add envs."
+      }
+    },
+    {
+      "term": "Build",
+      "approved": ["Build"],
+      "avoid": [
+        "Compile (unless technically necessary)",
+        "Generate",
+        "Assemble (as the main system step name)"
+      ],
+      "definition": "The step where Pink prepares the project for deployment. Build turns the connected repository into a runnable application artifact.",
+      "clash_warning": "In the Sticklight builder, 'build' is used flexibly as supporting copy alongside Create. In Pink, Build is a specific technical pipeline step name with a precise meaning. Keep these contexts distinct.",
+      "usage": {
+        "when_to_use": [
+          "As a step in the project creation or deployment flow",
+          "When referring to the preparation phase before deployment",
+          "In build logs, progress, and troubleshooting"
+        ],
+        "when_not_to_use": [
+          "When referring to the final deployment",
+          "When referring to project creation more broadly",
+          "When referring to user-facing creation in the main builder product"
+        ],
+        "notes": [
+          "In Pink, build is an engineering/runtime term",
+          "Keep distinct from Create in the main Sticklight builder"
+        ]
+      },
+      "examples": {
+        "correct": ["Build", "Pink builds the project before deployment."],
+        "avoid": "Generate"
+      }
+    },
+    {
+      "term": "Analyze",
+      "approved": ["Analyze"],
+      "avoid": [
+        "Inspect",
+        "Scan (unless technically different)",
+        "Review (as the system step name)"
+      ],
+      "definition": "The step where Pink examines the connected project before building it. Analyze helps Pink understand the project structure and prepare it for successful conversion and deployment.",
+      "usage": {
+        "when_to_use": [
+          "As a project setup step",
+          "When referring to the evaluation phase between repository connection and build",
+          "In progress indicators and onboarding"
+        ],
+        "when_not_to_use": [
+          "When referring to security scans",
+          "When referring to user analytics or performance analysis"
+        ],
+        "notes": [
+          "Keep this distinct from Security scans or product analytics",
+          "Use simple, confidence-building language"
+        ]
+      },
+      "examples": {
+        "correct": ["Analyze", "Pink analyzes the project before building it."],
+        "avoid": "Review"
+      }
+    },
+    {
+      "term": "Redeploy",
+      "approved": ["Redeploy"],
+      "avoid": [
+        "Republish",
+        "Rebuild (unless the action is technically only a rebuild)",
+        "Retry deployment (unless in a failure state)"
+      ],
+      "definition": "An action that triggers a new deployment of an existing project. Redeploy is used when users want to deliver the project again, typically after changes or configuration updates.",
+      "usage": {
+        "when_to_use": [
+          "As an action on an already deployed project",
+          "In environments and deployment flows",
+          "When users want to re-run delivery without creating a new project"
+        ],
+        "when_not_to_use": [
+          "When creating the first deployment",
+          "When only editing variables without yet triggering delivery"
+        ],
+        "notes": [
+          "Stronger and more accurate than publish in this context",
+          "Good action label for a production-grade hosting product"
+        ]
+      },
+      "examples": {
+        "correct": "Redeploy",
+        "avoid": "Republish"
+      }
+    },
+    {
+      "term": "Live",
+      "approved": ["Live"],
+      "avoid": [
+        "Published",
+        "Active (unless referring to general status)",
+        "Online (as the primary system badge)"
+      ],
+      "definition": "A status that indicates the project or environment is currently running and accessible.",
+      "usage": {
+        "when_to_use": [
+          "As a short status badge",
+          "When indicating a project/environment is active and available",
+          "In status surfaces and environment headers"
+        ],
+        "when_not_to_use": [
+          "As a substitute for deployment or production environment",
+          "When referring to the act of going live"
+        ],
+        "notes": [
+          "Good as a compact status label",
+          "Keep it as a status, not as the name of a workflow or object"
+        ]
+      },
+      "examples": {
+        "correct": "Live",
+        "avoid": "Published"
+      }
+    }
+  ]
+}
