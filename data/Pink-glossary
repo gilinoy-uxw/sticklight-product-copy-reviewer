@@ -45,6 +45,8 @@
       "term": "Workspace",
       "approved": ["Workspace"],
       "avoid": [
+        "Account (when referring to the Pink container — account is correct when referring to a GitHub account)",
+        "Organization (when referring to the Pink container — organization is correct when referring to a GitHub organization)",
         "Team space",
         "Dashboard",
         "Project (when referring to the higher-level container)"
@@ -137,53 +139,6 @@
         "avoid": "Choose a source code."
       }
     },
-{
-  "term": "GitHub account / GitHub organization",
-  "approved": ["GitHub account", "GitHub organization"],
-  "also_allowed": [
-    "account (when the GitHub context is clear)",
-    "organization (when the GitHub context is clear)"
-  ],
-  "avoid": [
-    "workspace (when referring to a GitHub entity)",
-    "team",
-    "profile (unless referring to a GitHub user profile)",
-    "owner (unless referring to repository ownership in technical copy)"
-  ],
-  "definition": "The GitHub user account or organization that owns or contains the repository connected to Pink. Users may connect a personal GitHub account or select a GitHub organization when choosing the repository Pink will analyze, build, and deploy.",
-  "usage": {
-    "when_to_use": [
-      "When referring to the GitHub identity or entity connected to Pink",
-      "In source and repository connection flows",
-      "When users need to choose where their repository is located",
-      "When distinguishing between a personal GitHub account and a GitHub organization"
-    ],
-    "when_not_to_use": [
-      "When referring to the Pink workspace",
-      "When referring to the Pink project",
-      "When referring to the connected repository itself",
-      "When referring to Sticklight account settings"
-    ],
-    "notes": [
-      "Account and organization are acceptable when referring to GitHub",
-      "Use GitHub account or GitHub organization when the context may be ambiguous",
-      "Do not use workspace for GitHub entities",
-      "Keep the distinction clear: workspace belongs to Pink/Sticklight; account and organization can refer to GitHub",
-      "Use repository for the code source, not the GitHub account or organization that owns it"
-    ]
-  },
-  "examples": {
-    "correct": [
-      "Connect your GitHub account.",
-      "Choose a GitHub organization.",
-      "Select the account or organization that owns this repository."
-    ],
-    "avoid": [
-      "Choose a workspace that owns this repository.",
-      "Connect your GitHub team."
-    ]
-  }
-}
     {
       "term": "Repository",
       "approved": ["Repository"],
