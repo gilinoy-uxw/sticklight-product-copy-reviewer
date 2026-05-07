@@ -45,8 +45,6 @@
       "term": "Workspace",
       "approved": ["Workspace"],
       "avoid": [
-        "Account",
-        "Organization",
         "Team space",
         "Dashboard",
         "Project (when referring to the higher-level container)"
