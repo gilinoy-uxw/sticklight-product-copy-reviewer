@@ -1,21 +1,49 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "source": "Sticklight Brand Glossary",
   "terms": [
     {
       "term": "site",
-      "approved": ["site", "website"],
-      "avoid": [],
-      "definition": "A web property created and managed by a user using Sticklight.",
+      "approved": ["site"],
+      "also_allowed": ["website"],
+      "avoid": [
+        "webpage (when referring to the full site)",
+        "project (when referring specifically to the published web property)",
+        "app (unless the output is actually an app)",
+        "product (when referring specifically to a website)"
+      ],
+      "definition": "A web property created and managed by a user using Sticklight. A site or website is the user-facing outcome of a Sticklight project. Users create a project in Sticklight, and the result can be a website they edit, preview, publish, and manage.",
       "usage": {
-        "when_to_use": "In product UI, onboarding, settings, and instructional copy.",
+        "when_to_use": [
+          "Use site in product UI, navigation, settings, and instructional copy",
+          "Use website when clarity or natural phrasing is more important than brevity",
+          "When referring to the published or publishable web experience created from a project",
+          "When explaining what users are building with Sticklight"
+        ],
+        "when_not_to_use": [
+          "When referring to the saved item in Sticklight's project library — use project",
+          "When referring to one page inside a website — use page",
+          "When referring to apps, dashboards, stores, or other non-website outputs",
+          "When referring to the Workspace or creation surface"
+        ],
         "notes": [
           "site is preferred for brevity and consistency",
-          "website is acceptable but site is the shorter, preferred form"
+          "website is acceptable when it sounds more natural or improves clarity",
+          "Use project for the saved workspace/item in Sticklight",
+          "Use site or website for the web output users create and publish",
+          "Avoid using website when the project is actually an app, dashboard, store, or other digital product"
         ]
       },
       "examples": {
-        "correct": "Choose a name for your site."
+        "correct": [
+          "Describe the website you want to create.",
+          "Run a security scan before publishing your site.",
+          "Your site is ready to publish."
+        ],
+        "avoid": [
+          "Open your website from My projects.",
+          "Edit this project's webpage."
+        ]
       }
     },
     {
@@ -66,13 +94,12 @@
         "Workflow library",
         "Marketplace (unless officially supported)"
       ],
-      "definition": "A curated library of ready-made Skills built by the Sticklight team. The Skills Library helps users discover and apply predefined workflows for common build needs, such as frontend design, performance, accessibility, and more.",
+      "definition": "A curated library of ready-made Skills built by the Sticklight team.",
       "usage": {
         "when_to_use": [
           "When referring to the built-in collection of Sticklight-made Skills",
           "When describing ready-made Skills users can browse, apply, or reuse",
-          "In flows related to discovering, selecting, or adding Skills to a project",
-          "When explaining how users can get started with Skills without writing their own"
+          "In flows related to discovering, selecting, or adding Skills to a project"
         ],
         "when_not_to_use": [
           "When referring to custom Skills uploaded by the user",
@@ -82,7 +109,6 @@
         "notes": [
           "Always capitalize as Skills Library",
           "Refers only to ready-made Skills created by Sticklight",
-          "Use Skills for the individual reusable workflows inside the library",
           "Avoid shortening to Library unless context is completely clear",
           "Position as a way to discover proven workflows, not as a generic asset library"
         ]
@@ -103,7 +129,7 @@
         "Project screen",
         "Dashboard (when referring to project creation)"
       ],
-      "definition": "The main starting point in Sticklight where users begin a new project by describing what they want to create. Includes the prompt input, creation controls, and suggested starting ideas.",
+      "definition": "The main starting point in Sticklight where users begin a new project by describing what they want to create.",
       "usage": {
         "when_to_use": [
           "When referring to the first screen users see before creating a project",
@@ -120,8 +146,7 @@
         "notes": [
           "Always capitalize as Workspace when referring to the Sticklight product area",
           "The Workspace is where creation starts, not where project editing happens",
-          "Avoid using dashboard unless the screen is focused on managing existing projects or account-level activity",
-          "Use project for the created output, not for the starting surface itself"
+          "Avoid using dashboard unless the screen is focused on managing existing projects or account-level activity"
         ]
       },
       "examples": {
@@ -140,25 +165,21 @@
         "Safe mode",
         "Read-only mode (unless technical clarification is needed)"
       ],
-      "definition": "A mode where Sticklight analyzes, explores, and plans the next steps before making changes. Separates thinking from building — Sticklight can understand the request, ask clarifying questions, review context, and propose an approach without creating or changing anything until the user approves.",
+      "definition": "A mode where Sticklight analyzes, explores, and plans the next steps before making changes. Sticklight can understand the request, ask clarifying questions, review context, and propose an approach without creating or changing anything until the user approves.",
       "usage": {
         "when_to_use": [
           "When referring to the mode that helps users plan before building",
-          "When describing research, exploration, or implementation planning",
           "In tooltips, mode switchers, onboarding, and instructional copy",
           "When explaining that Sticklight will not make changes yet"
         ],
         "when_not_to_use": [
           "When Sticklight is actively creating or changing a project",
-          "When referring to a saved plan or build summary",
-          "When referring to a general project strategy outside the product mode"
+          "When referring to a saved plan or build summary"
         ],
         "notes": [
           "Use Plan mode for the full mode name",
           "Use Plan only as the short button label when space is limited",
           "Written in sentence case in UI",
-          "Plan mode should feel exploratory and low-commitment",
-          "Be clear that no changes are made until the user approves",
           "Pair naturally with build/create language: plan first, build after approval"
         ]
       },
@@ -179,24 +200,21 @@
         "Hide preview",
         "Hide website"
       ],
-      "definition": "A view that hides the site or product being built, so users can interact with Sticklight as a pure conversational agent. Gives users more space to discuss, refine, plan, or troubleshoot without the visual build preview in view.",
+      "definition": "A view that hides the site or product being built, so users can interact with Sticklight as a pure conversational agent.",
       "usage": {
         "when_to_use": [
           "When referring to the view that hides the build preview",
-          "When users want to focus on the conversation with Sticklight",
           "In tooltips, view controls, onboarding, and instructional copy"
         ],
         "when_not_to_use": [
           "When referring to Plan mode",
           "When referring to minimizing or closing the AI panel",
-          "When referring to previewing the project without the chat",
           "When referring to browser fullscreen behavior"
         ],
         "notes": [
           "Use Focus mode for the full mode name",
           "Written in sentence case in UI",
           "Focus mode changes the view, not Sticklight's behavior",
-          "Do not imply that the project is closed, paused, or deleted",
           "Keep the distinction clear: Plan mode controls whether Sticklight plans or builds; Focus mode controls what the user sees"
         ]
       },
@@ -216,25 +234,22 @@
         "Refine mode",
         "Builder mode"
       ],
-      "definition": "A mode where users can directly edit and refine the project Sticklight created. Lets users customize the structure, layout, content, logic, and UI after Sticklight generates the initial version.",
+      "definition": "A mode where users can directly edit and refine the project Sticklight created.",
       "usage": {
         "when_to_use": [
           "When referring to the mode for manually editing a generated project",
-          "When users can select, adjust, move, or modify elements directly",
-          "In tooltips, mode switchers, onboarding, and instructional copy",
-          "When describing how users refine the project after generation"
+          "In tooltips, mode switchers, onboarding, and instructional copy"
         ],
         "when_not_to_use": [
           "When Sticklight is generating or changing the project through chat",
           "When referring to Plan mode",
-          "When referring only to visual preview",
           "When referring to publishing or deployment"
         ],
         "notes": [
           "Use Edit mode for the full mode name",
           "Written in sentence case in UI",
-          "Refine can be used as a verb, but not as the mode name",
-          "Avoid implying users must edit manually to get a good result"
+          "'Refine' can be used as a verb, but not as the mode name",
+          "Keep the distinction clear: Plan mode is for deciding what to do; Edit mode is for changing the project directly"
         ]
       },
       "examples": {
@@ -253,18 +268,16 @@
         "Prompt panel",
         "Left panel (unless describing placement in support/debugging context)"
       ],
-      "definition": "The panel where users chat with Sticklight to create, build, refine, and troubleshoot a project. Contains the conversation between the user and Sticklight, including requests, questions, responses, thinking steps, and build actions.",
+      "definition": "The panel where users chat with Sticklight to create, build, refine, and troubleshoot a project.",
       "usage": {
         "when_to_use": [
           "When referring to the left-side panel where the user interacts with Sticklight",
-          "In tooltips, view controls, onboarding, and instructional copy",
-          "When describing where users enter requests or review Sticklight's responses"
+          "In tooltips, view controls, onboarding, and instructional copy"
         ],
         "when_not_to_use": [
           "When referring to the project preview or editable canvas",
           "When referring to Focus mode",
-          "When referring to the prompt input only",
-          "When referring broadly to all Sticklight AI interaction"
+          "When referring to the prompt input only"
         ],
         "notes": [
           "Use Chat panel for the full UI area",
@@ -285,14 +298,12 @@
         "Generate (as the main CTA)",
         "Make",
         "Produce",
-        "Start (when the action creates a project)",
-        "Build (as the primary CTA)"
+        "Start (when the action creates a project)"
       ],
       "definition": "The primary action for turning a user's prompt into a new Sticklight project.",
       "usage": {
         "when_to_use": [
           "As the main CTA for starting project creation",
-          "When describing the user's intent to create a new product with Sticklight",
           "In onboarding, prompt input, empty states, and primary action flows"
         ],
         "when_not_to_use": [
@@ -302,8 +313,7 @@
         ],
         "notes": [
           "Use Create as the main CTA",
-          "Use build more flexibly in supporting copy, especially when describing the work Sticklight performs",
-          "Avoid generate when it makes Sticklight feel like a one-shot AI output instead of a controllable creation platform",
+          "Avoid 'generate' when it makes Sticklight feel like a one-shot AI output",
           "Pair naturally with Plan: plan before building, create when ready"
         ]
       },
@@ -327,8 +337,7 @@
       "usage": {
         "when_to_use": [
           "When referring to the full Tools panel",
-          "When describing the entry point for widgets, packages, and integrations",
-          "In chat input actions, onboarding, and instructional copy"
+          "When describing the entry point for widgets, packages, and integrations"
         ],
         "when_not_to_use": [
           "When referring only to reusable workflows — use Skills",
@@ -338,14 +347,12 @@
         ],
         "notes": [
           "Always capitalize Tools when referring to the Sticklight product area",
-          "Tools are additive: they enhance what users create through chat",
-          "Avoid using Tools as a catch-all for Skills",
           "The Tools panel includes three categories: Widgets, Packages, and Integrations"
         ]
       },
       "examples": {
-        "correct": ["Use Tools to add widgets, packages, and integrations to your project."],
-        "avoid": ["Use assets to enhance your website."]
+        "correct": "Use Tools to add widgets, packages, and integrations to your project.",
+        "avoid": "Use assets to enhance your website."
       }
     },
     {
@@ -362,8 +369,6 @@
       "usage": {
         "when_to_use": [
           "When referring to pre-built visual components in the Tools panel",
-          "When users can browse, select, preview, or add UI pieces to a project",
-          "When describing visual or interactive parts of a site",
           "In Tools panel tabs, cards, filters, and add flows"
         ],
         "when_not_to_use": [
@@ -374,14 +379,13 @@
         ],
         "notes": [
           "Use Widgets as the tab name",
-          "Use lowercase widget in running text unless it starts a sentence or appears as a UI label",
-          "Widgets can be customized through chat or Edit mode after they're added",
-          "Avoid implying widgets are final or fixed; they are starting points users can refine"
+          "Use lowercase widget in running text",
+          "Keep the distinction clear: widgets are pre-built items users add; elements are parts of the project users select and edit"
         ]
       },
       "examples": {
         "correct": ["Add a widget to your project.", "Select one or more widgets to add them to your site."],
-        "avoid": ["Add a package to create a contact form."]
+        "avoid": "Add a package to create a contact form."
       }
     },
     {
@@ -398,7 +402,6 @@
       "usage": {
         "when_to_use": [
           "When referring to JavaScript libraries available in the Tools panel",
-          "When users can add advanced functionality to a project",
           "In Tools panel tabs, package cards, installation flows, and technical guidance"
         ],
         "when_not_to_use": [
@@ -408,15 +411,13 @@
         ],
         "notes": [
           "Use Packages as the tab name",
-          "Use lowercase package in running text unless it starts a sentence or appears as a UI label",
-          "Packages should feel powerful but not overly developer-only",
-          "Clarify that adding a package makes it available for Sticklight to use",
+          "Use lowercase package in running text",
           "Avoid encouraging users to add unnecessary packages; each package may affect performance"
         ]
       },
       "examples": {
         "correct": ["Add a package to use advanced animations in your project.", "Use GSAP to animate the hero section on scroll."],
-        "avoid": ["Add an integration to create scroll animations."]
+        "avoid": "Add an integration to create scroll animations."
       }
     },
     {
@@ -433,26 +434,23 @@
       "usage": {
         "when_to_use": [
           "When referring to third-party services available in the Tools panel",
-          "When users connect an external service to a project",
           "In setup flows that require API keys, credentials, or service configuration"
         ],
         "when_not_to_use": [
           "When referring to UI components — use widgets",
           "When referring to JavaScript libraries — use packages",
-          "When referring to reusable workflows — use Skills",
-          "When referring to general project features built directly by Sticklight"
+          "When referring to reusable workflows — use Skills"
         ],
         "notes": [
           "Use Integrations as the tab name",
-          "Use lowercase integration in running text unless it starts a sentence or appears as a UI label",
+          "Use lowercase integration in running text",
           "Be clear when an integration requires credentials or an API key",
-          "Avoid implying every integration works without setup",
           "Integrations connect external services; they do not create visual UI by themselves"
         ]
       },
       "examples": {
         "correct": ["Add an integration to connect Google Analytics.", "Enter your API key to connect this integration."],
-        "avoid": ["Install a plugin to connect analytics."]
+        "avoid": "Install a plugin to connect analytics."
       }
     },
     {
@@ -471,20 +469,18 @@
       "usage": {
         "when_to_use": [
           "When referring to the saved items users create in Sticklight",
-          "When describing the user's project library",
           "In project cards, filters, search, status labels, and management flows"
         ],
         "when_not_to_use": [
           "When referring specifically to a published website — use published site or live site",
-          "When referring only to the visual page being edited",
           "When referring to reusable workflows — use Skills",
           "When referring to pre-built components — use Widgets"
         ],
         "notes": [
           "Use My projects as the library name",
-          "Use lowercase project in running text unless it starts a sentence or appears as a UI label",
+          "Use lowercase project in running text",
           "Status labels: Published / Not published",
-          "A project may contain a website, app, dashboard, store, or other digital product"
+          "Avoid narrowing the term to 'site' unless the specific project type is clearly a site"
         ]
       },
       "examples": {
@@ -495,137 +491,67 @@
     {
       "term": "Thinking",
       "approved": ["Thinking", "Thought (completed state)"],
-      "avoid": [
-        "Reasoning",
-        "Analyzing",
-        "Processing",
-        "Loading",
-        "Brainstorming",
-        "AI thinking"
-      ],
+      "avoid": ["Reasoning", "Analyzing", "Processing", "Loading", "Brainstorming", "AI thinking"],
       "definition": "A status that shows Sticklight is interpreting the user's request, reviewing context, and deciding what to do next. When complete, the status changes to Thought.",
       "usage": {
-        "when_to_use": [
-          "When Sticklight is evaluating a request before taking action",
-          "When Sticklight is planning, checking context, or deciding the next step",
-          "In chat activity states and expandable process details"
-        ],
+        "when_to_use": ["When Sticklight is evaluating a request before taking action", "In chat activity states"],
         "when_not_to_use": [
           "When Sticklight is running a specific tool or action — use Running",
-          "When Sticklight is directly changing project files — use Editing",
-          "When referring to Plan mode as a product mode"
+          "When Sticklight is directly changing project files — use Editing"
         ],
-        "notes": [
-          "Use Thinking for the active state",
-          "Use Thought for the completed state",
-          "Keep this as a lightweight process label, not a user-facing explanation of internal reasoning"
-        ]
+        "notes": ["Use Thinking for the active state", "Use Thought for the completed state"]
       },
       "examples": {
         "correct": ["Thinking", "Thought"],
-        "avoid": ["AI is reasoning"]
+        "avoid": "AI is reasoning"
       }
     },
     {
       "term": "Running",
       "approved": ["Running", "Ran (completed state)"],
-      "avoid": [
-        "Executing",
-        "Calling",
-        "Processing",
-        "Using tool",
-        "Tool run",
-        "Running tool (unless technical clarity is needed)"
-      ],
+      "avoid": ["Executing", "Calling", "Processing", "Using tool", "Tool run"],
       "definition": "A status that shows Sticklight is using a tool or performing a specific system action. When complete, the status changes to Ran.",
       "usage": {
-        "when_to_use": [
-          "When Sticklight performs a tool-based action",
-          "When showing that Sticklight checked, mapped, scanned, or processed something",
-          "In chat activity states where the action name appears next to the status"
-        ],
+        "when_to_use": ["When Sticklight performs a tool-based action", "In chat activity states where the action name appears next to the status"],
         "when_not_to_use": [
           "When Sticklight is only interpreting the request — use Thinking",
           "When Sticklight is directly changing a file or project — use Editing"
         ],
-        "notes": [
-          "Use Running for the active state",
-          "Use Ran for the completed state",
-          "Pair with a specific action name when available",
-          "Keep labels short and readable; avoid developer-only terms unless needed"
-        ]
+        "notes": ["Use Running for the active state", "Use Ran for the completed state", "Pair with a specific action name when available"]
       },
       "examples": {
         "correct": ["Running Codebase map", "Ran Codebase map"],
-        "avoid": ["Executing tool: Codebase map"]
+        "avoid": "Executing tool: Codebase map"
       }
     },
     {
       "term": "Editing",
       "approved": ["Editing", "Edited (completed state)"],
-      "avoid": [
-        "Changing",
-        "Modifying",
-        "Updating",
-        "Writing file",
-        "Applying changes",
-        "Committing"
-      ],
+      "avoid": ["Changing", "Modifying", "Updating", "Writing file", "Applying changes", "Committing"],
       "definition": "A status that shows Sticklight is making changes to a project file or part of the build. When complete, the status changes to Edited.",
       "usage": {
-        "when_to_use": [
-          "When Sticklight is directly changing the project",
-          "When a specific file, component, or area is being edited",
-          "In chat activity states where Sticklight is applying requested changes"
-        ],
+        "when_to_use": ["When Sticklight is directly changing the project", "In chat activity states where Sticklight is applying requested changes"],
         "when_not_to_use": [
           "When the user is manually changing the project in Edit mode",
           "When Sticklight is only planning or interpreting the request — use Thinking",
           "When Sticklight is running a tool without changing the project — use Running"
         ],
-        "notes": [
-          "Use Editing for the active state",
-          "Use Edited for the completed state",
-          "This is a system activity state, not the same as Edit mode",
-          "Pair with the file, component, or project area being changed when available",
-          "Avoid committing unless referring to an actual technical commit flow"
-        ]
+        "notes": ["Use Editing for the active state", "Use Edited for the completed state", "This is a system activity state, not the same as Edit mode"]
       },
       "examples": {
         "correct": ["Editing ContactForm.tsx", "Edited ContactForm.tsx"],
-        "avoid": ["Applying changes to ContactForm.tsx"]
+        "avoid": "Applying changes to ContactForm.tsx"
       }
     },
     {
       "term": "Brand",
       "approved": ["Brand", "brand kit (for the visual identity set)"],
-      "avoid": [
-        "Theme",
-        "Style kit",
-        "Design system (when referring to the selectable UI feature)",
-        "Color kit",
-        "Palette (when referring to the full kit)",
-        "Look and feel (as a UI label)"
-      ],
+      "avoid": ["Theme", "Style kit", "Design system (when referring to the selectable UI feature)", "Color kit", "Palette (when referring to the full kit)", "Look and feel (as a UI label)"],
       "definition": "The Sticklight area for defining a project's visual identity. Users open Brand to choose or customize a brand kit — the set of colors, fonts, and styling choices that guide how Sticklight designs the project.",
       "usage": {
-        "when_to_use": [
-          "Use Brand as the short UI label for the control or entry point",
-          "Use brand kit when referring to the selected or customized visual identity set",
-          "When users choose, customize, or apply colors and fonts"
-        ],
-        "when_not_to_use": [
-          "When referring only to colors — use colors or color palette",
-          "When referring only to typography — use fonts",
-          "When referring to a company's full external brand strategy or guidelines",
-          "When referring to technical design tokens or a full design system"
-        ],
-        "notes": [
-          "Use Brand for the compact UI label",
-          "Use lowercase brand kit in running text",
-          "Brand is the entry point; brand kit is the visual identity set",
-          "Avoid implying users must define a brand kit before creating a project"
-        ]
+        "when_to_use": ["Use Brand as the short UI label", "Use brand kit when referring to the selected or customized visual identity set"],
+        "when_not_to_use": ["When referring only to colors — use colors or color palette", "When referring only to typography — use fonts"],
+        "notes": ["Use Brand for the compact UI label", "Use lowercase brand kit in running text", "Brand is the entry point; brand kit is the visual identity set"]
       },
       "examples": {
         "correct": ["Brand", "Select a brand kit.", "Customize your brand kit to use your own colors and fonts."],
@@ -635,33 +561,12 @@
     {
       "term": "Version history",
       "approved": ["Version history", "version (for a single saved project state)"],
-      "avoid": [
-        "History",
-        "Project history",
-        "Commit history",
-        "Save history",
-        "Revision history",
-        "Versions (when referring to the full view)"
-      ],
+      "avoid": ["History", "Project history", "Commit history", "Save history", "Revision history", "Versions (when referring to the full view)"],
       "definition": "A view where users can see and restore saved versions of a Sticklight project.",
       "usage": {
-        "when_to_use": [
-          "When referring to the full view that lists saved project versions",
-          "When users can browse, compare, or restore previous versions",
-          "In navigation, tooltips, project controls, and restore flows"
-        ],
-        "when_not_to_use": [
-          "When referring to chat messages or conversation history",
-          "When referring to user activity logs",
-          "When referring to publishing history",
-          "When referring to browser history"
-        ],
-        "notes": [
-          "Use Version history for the full view name",
-          "Written in sentence case in UI",
-          "Avoid developer-only terms like commit in user-facing copy",
-          "Make restore copy clear about impact: restoring a version may replace the current project state"
-        ]
+        "when_to_use": ["When referring to the full view that lists saved project versions", "In navigation, tooltips, project controls, and restore flows"],
+        "when_not_to_use": ["When referring to chat messages or conversation history", "When referring to publishing history"],
+        "notes": ["Written in sentence case in UI", "Avoid developer-only terms like commit in user-facing copy", "Make restore copy clear about impact: restoring a version may replace the current project state"]
       },
       "examples": {
         "correct": ["Version history", "View and restore saved versions.", "Restore this version."],
@@ -671,33 +576,12 @@
     {
       "term": "AI",
       "approved": ["AI"],
-      "avoid": [
-        "Ai",
-        "ai",
-        "Artificial intelligence",
-        "Assistant",
-        "Bot",
-        "Agent (unless officially supported as a product term)"
-      ],
-      "definition": "The technology in Sticklight that interprets user input, follows instructions, and helps create or refine projects.",
+      "avoid": ["Ai", "ai", "Artificial intelligence", "Assistant", "Bot", "Agent (unless officially supported as a product term)"],
+      "definition": "The technology in Sticklight that interprets user input, follows instructions, and helps create or refine projects. Use AI when referring to the model's ability to understand context, follow guidance, or interpret uploaded materials. Use Sticklight when referring to the product, platform, interface, or overall experience.",
       "usage": {
-        "when_to_use": [
-          "When explaining how prompts, uploads, Skills, or brand inputs improve the system's output",
-          "When referring to understanding, interpreting, generating, or following guidance",
-          "In educational copy that helps users give better context"
-        ],
-        "when_not_to_use": [
-          "When referring to the product or platform as a whole — use Sticklight",
-          "When referring to UI areas, panels, settings, or controls",
-          "When 'AI' would make the copy feel generic, buzzwordy, or less human"
-        ],
-        "notes": [
-          "Always uppercase AI",
-          "Do not spell out artificial intelligence",
-          "Use AI when the copy is about guidance, context, interpretation, or output quality",
-          "Use Sticklight when the copy is about the product, feature, UI, or user workflow",
-          "Preferred framing: users guide the AI; Sticklight provides the environment where the work happens"
-        ]
+        "when_to_use": ["When explaining how prompts, uploads, Skills, or brand inputs improve the system's output", "When the subject is the intelligence behind the output, not the product surface"],
+        "when_not_to_use": ["When referring to the product or platform as a whole — use Sticklight", "When referring to UI areas, panels, settings, or controls"],
+        "notes": ["Always uppercase AI", "Do not spell out artificial intelligence", "Preferred framing: users guide the AI; Sticklight provides the environment where the work happens"]
       },
       "examples": {
         "correct": ["Guide the AI with clear instructions.", "Uploads help the AI understand your vision more precisely.", "Use Skills to teach the AI how to handle repeatable tasks."],
@@ -707,32 +591,12 @@
     {
       "term": "Element",
       "approved": ["Element", "selected element"],
-      "avoid": [
-        "Component",
-        "Block",
-        "Layer",
-        "Object",
-        "Item",
-        "Widget (unless referring to a pre-built widget from Tools)"
-      ],
-      "definition": "An individual part of a project that users can select and edit in the preview. Elements can include text, buttons, images, sections, containers, and other editable parts of the project.",
+      "avoid": ["Component", "Block", "Layer", "Object", "Item", "Widget (unless referring to a pre-built widget from Tools)"],
+      "definition": "An individual part of a project that users can select and edit in the preview.",
       "usage": {
-        "when_to_use": [
-          "When referring to something users can click, select, or edit in the preview",
-          "In Edit mode, visual editing, and properties panel copy",
-          "When describing direct styling controls for a specific part of the project"
-        ],
-        "when_not_to_use": [
-          "When referring to pre-built items users add from Tools — use widget",
-          "When referring to reusable workflow instructions — use Skill",
-          "When referring to the full project, page, or site"
-        ],
-        "notes": [
-          "Use element for selectable, editable parts of the project",
-          "Use selected element when referring to the element currently active in the properties panel",
-          "Elements are edited visually in Edit mode",
-          "Keep the distinction clear: widgets are pre-built items users add; elements are parts of the project users select and edit"
-        ]
+        "when_to_use": ["When referring to something users can click, select, or edit in the preview", "In Edit mode, visual editing, and properties panel copy"],
+        "when_not_to_use": ["When referring to pre-built items users add from Tools — use widget", "When referring to reusable workflow instructions — use Skill"],
+        "notes": ["Use element for selectable, editable parts of the project", "Keep the distinction clear: widgets are pre-built items users add; elements are parts of the project users select and edit"]
       },
       "examples": {
         "correct": ["Select an element.", "Click any element in the preview to start editing."],
@@ -742,207 +606,191 @@
     {
       "term": "Preview",
       "approved": ["Preview"],
-      "avoid": [
-        "View",
-        "Live preview",
-        "Website view",
-        "Canvas",
-        "Page view"
-      ],
-      "definition": "The view where users can see and interact with the current project output without entering direct editing or code mode.",
+      "avoid": ["View", "Live preview", "Website view", "Canvas", "Page view"],
+      "definition": "The view where users can see and interact with the current project output.",
       "usage": {
-        "when_to_use": [
-          "When referring to the default visual view of the project",
-          "When users can inspect the output before editing, publishing, or making changes",
-          "In top navigation, view controls, onboarding, and instructional copy"
-        ],
-        "when_not_to_use": [
-          "When referring to the published version of the project",
-          "When referring to Edit mode",
-          "When referring to Focus mode",
-          "When referring to the live public URL"
-        ],
-        "notes": [
-          "Use Preview as the top navigation label",
-          "Avoid implying the project is live or public",
-          "Keep the distinction clear: Preview is for viewing, Edit is for direct visual editing, Publish makes the project accessible"
-        ]
+        "when_to_use": ["When referring to the default visual view of the project", "In top navigation, view controls, onboarding, and instructional copy"],
+        "when_not_to_use": ["When referring to the published version of the project", "When referring to Edit mode", "When referring to the live public URL"],
+        "notes": ["Use Preview as the top navigation label", "Avoid implying the project is live or public"]
       },
       "examples": {
         "correct": ["Preview", "Open Preview to see your project."],
-        "avoid": ["Open Live preview."]
+        "avoid": "Open Live preview."
       }
     },
     {
       "term": "Edit",
       "approved": ["Edit", "Edit mode (for the broader mode)"],
-      "avoid": [
-        "Design",
-        "Customize",
-        "Refine",
-        "Visual editor",
-        "Manual editor"
-      ],
-      "definition": "The top navigation area where users directly edit the visual parts of a project. Gives users hands-on control over selected elements, including typography, spacing, colors, layout, and effects.",
+      "avoid": ["Design", "Customize", "Refine", "Visual editor", "Manual editor"],
+      "definition": "The top navigation area where users directly edit the visual parts of a project.",
       "usage": {
-        "when_to_use": [
-          "As the top navigation label for visual editing",
-          "When users can select elements and adjust their properties",
-          "When distinguishing direct visual changes from chat-based changes"
-        ],
-        "when_not_to_use": [
-          "When referring to planning before building — use Plan mode",
-          "When referring to code-level changes — use Code",
-          "When referring to Sticklight's system activity state — use Editing / Edited"
-        ],
-        "notes": [
-          "Use Edit as the top navigation label",
-          "Use Edit mode when referring to the broader mode",
-          "Avoid implying users must edit manually to get a polished result",
-          "Keep the distinction clear: Edit is the view/control; Editing is an AI activity state"
-        ]
+        "when_to_use": ["As the top navigation label for visual editing", "When distinguishing direct visual changes from chat-based changes"],
+        "when_not_to_use": ["When referring to planning before building — use Plan mode", "When referring to code-level changes — use Code", "When referring to Sticklight's system activity state — use Editing / Edited"],
+        "notes": ["Use Edit as the top navigation label", "Keep the distinction clear: Edit is the view/control; Editing is an AI activity state"]
       },
       "examples": {
         "correct": ["Edit", "Open Edit to adjust spacing, colors, and typography."],
-        "avoid": ["Open Design to customize the page."]
+        "avoid": "Open Design to customize the page."
       }
     },
     {
       "term": "Code",
       "approved": ["Code"],
-      "avoid": [
-        "Developer mode",
-        "Code editor (as the top navigation label)",
-        "Files",
-        "Source",
-        "Advanced mode"
-      ],
-      "definition": "The view where users can inspect or work with the project's underlying code, including files and code changes.",
+      "avoid": ["Developer mode", "Code editor (as the top navigation label)", "Files", "Source", "Advanced mode"],
+      "definition": "The view where users can inspect or work with the project's underlying code.",
       "usage": {
-        "when_to_use": [
-          "As the top navigation label for the code view",
-          "When users can inspect, review, or edit project code",
-          "In technical workflows, troubleshooting, and advanced customization"
-        ],
-        "when_not_to_use": [
-          "When referring to visual editing — use Edit",
-          "When referring to the generated project as a whole — use project",
-          "When referring to reusable workflow instructions — use Skills"
-        ],
-        "notes": [
-          "Use Code as the top navigation label",
-          "Avoid making Code sound required for all users",
-          "Position as available for users who want deeper control or technical visibility",
-          "Keep the distinction clear: Edit is visual control; Code is implementation-level control"
-        ]
+        "when_to_use": ["As the top navigation label for the code view", "When users can inspect, review, or edit project code"],
+        "when_not_to_use": ["When referring to visual editing — use Edit", "When referring to the generated project as a whole — use project"],
+        "notes": ["Use Code as the top navigation label", "Keep the distinction clear: Edit is visual control; Code is implementation-level control"]
       },
       "examples": {
         "correct": ["Code", "Open Code to review the project files."],
-        "avoid": ["Open Developer mode."]
+        "avoid": "Open Developer mode."
       }
     },
     {
       "term": "Database",
       "approved": ["Database"],
-      "avoid": [
-        "Data",
-        "Tables (when referring to the full view)",
-        "Storage",
-        "Backend",
-        "DB"
-      ],
+      "avoid": ["Data", "Tables (when referring to the full view)", "Storage", "Backend", "DB"],
       "definition": "The view where users manage project data and database tables.",
       "usage": {
-        "when_to_use": [
-          "As the top navigation label for the project's data area",
-          "When referring to database tables and stored project data",
-          "In empty states, setup flows, and data management copy"
-        ],
-        "when_not_to_use": [
-          "When referring to general content on a page",
-          "When referring to uploaded files or assets",
-          "When referring to analytics or performance data",
-          "When referring to third-party services — use Integrations"
-        ],
-        "notes": [
-          "Use Database as the top navigation label",
-          "Use tables when referring to specific database tables inside the view",
-          "Avoid abbreviating to DB in user-facing copy",
-          "Use AI when the user is asking the intelligence layer to create or structure data"
-        ]
+        "when_to_use": ["As the top navigation label for the project's data area", "In empty states, setup flows, and data management copy"],
+        "when_not_to_use": ["When referring to general content on a page", "When referring to third-party services — use Integrations"],
+        "notes": ["Use Database as the top navigation label", "Avoid abbreviating to DB in user-facing copy"]
       },
       "examples": {
         "correct": ["Database", "Tables will appear here once you create them in your database.", "Ask AI to set data."],
-        "avoid": ["Open Backend to manage your data."]
+        "avoid": "Open Backend to manage your data."
       }
     },
     {
       "term": "Security",
       "approved": ["Security", "security scan", "controls"],
-      "avoid": [
-        "Protection",
-        "Safety",
-        "Security center",
-        "Scanner (when referring to the full view)",
-        "Audit (unless specifically referring to a scan/audit result)"
-      ],
+      "avoid": ["Protection", "Safety", "Security center", "Scanner (when referring to the full view)", "Audit (unless specifically referring to a scan/audit result)"],
       "definition": "The view where users check and manage security-related controls for a project.",
       "usage": {
-        "when_to_use": [
-          "As the top navigation label for the security area",
-          "When referring to scans, controls, failures, warnings, and passed checks",
-          "In pre-publish checks and project security workflows"
-        ],
-        "when_not_to_use": [
-          "When referring to general product safety or privacy",
-          "When referring to account security settings",
-          "When referring to publishing status"
-        ],
-        "notes": [
-          "Use Security as the top navigation label",
-          "Use security scan for the action of scanning the project",
-          "Use controls for individual checks or requirements",
-          "Keep severity labels clear: Critical, Warnings, Info, Passed",
-          "Avoid implying a project is secure unless scans and controls support that claim"
-        ]
+        "when_to_use": ["As the top navigation label for the security area", "When referring to scans, controls, failures, warnings, and passed checks"],
+        "when_not_to_use": ["When referring to general product safety or privacy", "When referring to publishing status"],
+        "notes": ["Use Security as the top navigation label", "Keep severity labels clear: Critical, Warnings, Info, Passed"]
       },
       "examples": {
         "correct": ["Security", "Run a security scan before publishing.", "Security Controls"],
-        "avoid": ["Open Protection to scan your project."]
+        "avoid": "Open Protection to scan your project."
       }
     },
     {
       "term": "Settings",
       "approved": ["Settings"],
-      "avoid": [
-        "Preferences",
-        "Configuration",
-        "Project settings (as the top navigation label)",
-        "Admin",
-        "Setup"
-      ],
-      "definition": "The view where users manage project-level settings and operational details, including project info, project instructions, secrets, functions, users, domains, logs, publishing controls, and deletion actions.",
+      "avoid": ["Preferences", "Configuration", "Project settings (as the top navigation label)", "Admin", "Setup"],
+      "definition": "The view where users manage project-level settings and operational details.",
       "usage": {
-        "when_to_use": [
-          "As the top navigation label for project settings",
-          "When referring to configuration and management areas for a specific project",
-          "In navigation, setup flows, and project management copy"
-        ],
-        "when_not_to_use": [
-          "When referring to the main Workspace",
-          "When referring to visual styling — use Brand or brand kit",
-          "When referring to direct visual editing — use Edit"
-        ],
-        "notes": [
-          "Use Settings as the top navigation label",
-          "Use more specific labels inside the view: Project info, Project instructions, Domains, and Logs",
-          "Settings apply to the current project, not necessarily to the whole Sticklight account",
-          "Use AI when explaining how project instructions guide build behavior"
-        ]
+        "when_to_use": ["As the top navigation label for project settings", "When users need to update project information, domains, access, or operational settings"],
+        "when_not_to_use": ["When referring to visual styling — use Brand or brand kit", "When referring to direct visual editing — use Edit"],
+        "notes": ["Use Settings as the top navigation label", "Use more specific labels inside the view: Project info, Project instructions, Domains, and Logs"]
       },
       "examples": {
         "correct": ["Settings", "Open Settings to edit project info.", "Add guidelines to shape how the AI builds your project."],
-        "avoid": ["Open Configuration."]
+        "avoid": "Open Configuration."
+      }
+    },
+    {
+      "term": "Templates",
+      "approved": ["Templates", "template (lowercase in running text)"],
+      "avoid": ["Skills", "Widgets", "Examples", "Demos", "Starters", "Themes", "Blueprints"],
+      "definition": "Visual starting points users can apply as the foundation for a new Sticklight project. Templates are production-ready websites from the Lovable community. They help users begin with an existing structure, layout, and visual direction instead of starting from a blank prompt.",
+      "usage": {
+        "when_to_use": [
+          "When referring to pre-built websites users can start from",
+          "When users browse, select, or apply a visual starting point",
+          "In project creation, onboarding, and template selection flows",
+          "When explaining that a selected template becomes the project foundation"
+        ],
+        "when_not_to_use": [
+          "When referring to reusable workflow instructions — use Skills",
+          "When referring to pre-built components users add to a project — use Widgets",
+          "When referring to JavaScript libraries — use Packages",
+          "When referring to brand styling options — use Brand or brand kit"
+        ],
+        "notes": [
+          "Use Templates for the category or collection",
+          "Use lowercase template in running text unless it starts a sentence or appears as a UI label",
+          "Templates are not Skills: a template defines what the project starts from; a Skill defines how the AI should work",
+          "Templates are not Widgets: a template is a full project foundation; a widget is a component added to a project",
+          "Avoid implying templates are final or fixed; users can customize them through chat, Edit mode, and Code"
+        ]
+      },
+      "examples": {
+        "correct": ["Start your next project with a template.", "Begin with a template.", "The selected template is applied as the project foundation."],
+        "avoid": ["Start your next project with a Skill.", "Choose a theme to build your project."]
+      }
+    },
+    {
+      "term": "Remix",
+      "approved": ["Remix"],
+      "avoid": [
+        "Duplicate",
+        "Copy",
+        "Clone",
+        "Reuse",
+        "Start from (as the primary action)",
+        "Customize (when referring to the initial template-based creation flow)"
+      ],
+      "definition": "An action that lets users start from a template and make it their own. Remix applies a template as the project foundation and lets users add guidance before generation, so the AI can adapt the template with the right context from the start.",
+      "usage": {
+        "when_to_use": [
+          "When users start a new project from a template",
+          "When users can add guidance before the template becomes their project",
+          "When the goal is to adapt an existing template, not copy it exactly",
+          "In template galleries, template detail pages, and project creation flows"
+        ],
+        "when_not_to_use": [
+          "When creating an exact copy of an existing project — use Duplicate",
+          "When referring to saving or reusing a project without changes",
+          "When referring to editing a project after it already exists",
+          "When referring to adding a widget, package, or integration"
+        ],
+        "notes": [
+          "Use Remix when the user starts from a template and adapts it",
+          "Remix is not a 1:1 copy; it includes user guidance and AI adaptation",
+          "Remix should feel creative and flexible, not technical",
+          "Keep the distinction clear: Remix adapts a template; Duplicate copies a project",
+          "Use template as the object: users remix templates, not Skills or Widgets"
+        ]
+      },
+      "examples": {
+        "correct": ["Remix this template.", "Add guidance to remix this template for your project.", "Remix a template, then refine it through chat or Edit mode."],
+        "avoid": ["Duplicate this template to make it your own."]
+      }
+    },
+    {
+      "term": "Duplicate",
+      "approved": ["Duplicate"],
+      "avoid": ["Remix", "Clone", "Copy (as the primary action)", "Fork", "Replicate"],
+      "definition": "An action that creates a 1:1 version of an existing project. Duplicate creates a separate copy of the original project that users can later edit, publish, or manage as their own project.",
+      "usage": {
+        "when_to_use": [
+          "When users create an exact copy of an existing project",
+          "When the new project should preserve the original structure, content, and setup",
+          "In project menus, project management flows, and reuse actions",
+          "When users want a safe copy they can edit without changing the original"
+        ],
+        "when_not_to_use": [
+          "When starting from a template with added guidance — use Remix",
+          "When applying a template as a new project foundation",
+          "When making small edits to the current project",
+          "When saving a version in Version history"
+        ],
+        "notes": [
+          "Use Duplicate for exact project copies",
+          "A duplicated project becomes a separate project",
+          "Duplicating does not adapt the project with AI guidance by default",
+          "Avoid developer-oriented terms like fork unless the product formally supports that model",
+          "Keep the distinction clear: Duplicate copies an existing project; Remix adapts a template with new guidance"
+        ]
+      },
+      "examples": {
+        "correct": ["Duplicate project.", "Create a duplicate to edit this project without changing the original."],
+        "avoid": ["Remix this project to create an exact copy.", "Fork project."]
       }
     }
   ]
