@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "source": "Sticklight Brand Voice & Tone Guidelines",
   "rules": [
     {
@@ -10,7 +10,8 @@
       "example": {
         "good": "Build websites, apps, and stores in minutes.",
         "bad": "We're reimagining what's possible for the future of the web."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "voice-02",
@@ -20,7 +21,8 @@
       "example": {
         "good": "You lead. Sticklight follows.",
         "bad": "Sticklight can do what designers used to."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "voice-03",
@@ -30,7 +32,8 @@
       "example": {
         "good": "Refine the layout, deploy your project, and ship to a custom domain.",
         "bad": "Make things look nice and share them online."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-01",
@@ -40,7 +43,8 @@
       "example": {
         "good": "Layout generated.",
         "bad": "I have generated the layout."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-02",
@@ -50,7 +54,8 @@
       "example": {
         "good": "Site settings",
         "bad": "Site Settings"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-03",
@@ -60,7 +65,8 @@
       "example": {
         "good": "Add a widget to your project.",
         "bad": "You can easily and quickly add a beautiful widget to your amazing project."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-04",
@@ -70,7 +76,8 @@
       "example": {
         "good": "Build responsive layouts.",
         "bad": "Build stunning, amazing, powerful responsive layouts."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-05",
@@ -80,7 +87,8 @@
       "example": {
         "good": "Green checkmarks in Satisfaction states only.",
         "bad": "Oops! 😅 Something went wrong. Don't worry though! 🙏"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-06",
@@ -90,7 +98,8 @@
       "example": {
         "good": "Something went wrong. Try again.",
         "bad": "We're so sorry! We sincerely apologize for this terrible inconvenience."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "tone-01",
@@ -100,7 +109,8 @@
       "example": {
         "good": "Select an element to start editing.",
         "bad": "Let's jump in together and start making something awesome!"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "tone-02",
@@ -110,7 +120,8 @@
       "example": {
         "good": "What would you like to build today?",
         "bad": "Click here to start. Choose a template."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "tone-03",
@@ -120,7 +131,8 @@
       "example": {
         "good": "The integration couldn't connect. Check your API key and try again.",
         "bad": "Uh oh! Something went wrong. We're on it!"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "tone-04",
@@ -130,7 +142,8 @@
       "example": {
         "good": "Deleting this project is permanent and cannot be undone.",
         "bad": "Heads up — once you delete this, it's gone for good!"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "interaction-01",
@@ -140,7 +153,8 @@
       "example": {
         "good": "Got it — I'll redesign the hero section with your brand colors and add a contact form below.",
         "bad": "Can you tell me more about what you want? What colors? What kind of form?"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "interaction-02",
@@ -150,7 +164,8 @@
       "example": {
         "good": "I've added a hero section with a standard layout. Let me know if you'd like to adjust it.",
         "bad": "Before I start, can you tell me: What layout? What image? What headline? What CTA text?"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "interaction-03",
@@ -160,7 +175,8 @@
       "example": {
         "good": "Adjust the spacing to keep things consistent across screen sizes.",
         "bad": "Adjust the rem values for consistent spacing across breakpoints."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "sticklight-vs-ai-01",
@@ -170,7 +186,8 @@
       "example": {
         "good": "Use Skills to teach the AI how to handle repeatable tasks. Sticklight will follow them on every new project.",
         "bad": "Use Skills to teach Sticklight how to think. The AI will handle everything from here."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "sticklight-vs-ai-02",
@@ -180,7 +197,8 @@
       "example": {
         "good": "Open the Chat panel to continue working with Sticklight.",
         "bad": "Chat with the AI bot to refine your project."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "cta-01",
@@ -190,7 +208,8 @@
       "example": {
         "good": "Create",
         "bad": "Generate"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "cta-02",
@@ -200,7 +219,8 @@
       "example": {
         "good": "Add widget",
         "bad": "Click here to add a new widget to your project"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "cta-03",
@@ -210,7 +230,8 @@
       "example": {
         "good": "Restore this version. This will replace your current project state.",
         "bad": "Go back to this version."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-01",
@@ -220,7 +241,8 @@
       "example": {
         "good": "No projects yet. Describe what you want to build and Sticklight will create it.",
         "bad": "No projects found."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-02",
@@ -230,7 +252,8 @@
       "example": {
         "good": "Plan your next steps before building.",
         "bad": "Click this button to enter Plan mode."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-03",
@@ -240,7 +263,8 @@
       "example": {
         "good": "Describe the website you want to create.",
         "bad": "To get started, you'll want to think about the type of website you'd like to create, then describe it in the box below, and Sticklight will use its AI to generate a first version for you to review."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-04",
@@ -250,7 +274,8 @@
       "example": {
         "good": "Preview / Edit / Code / Database",
         "bad": "Preview / Editing mode / See code / Your data"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-05",
@@ -260,7 +285,8 @@
       "example": {
         "good": "Couldn't publish. Check your domain settings and try again.",
         "bad": "An error occurred."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-06",
@@ -270,7 +296,8 @@
       "example": {
         "good": "Exit Plan mode to start building.",
         "bad": "Leave this mode to continue."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-07",
@@ -280,7 +307,8 @@
       "example": {
         "good": "Add a widget to your project.",
         "bad": "Just add a widget — it's super easy!"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-08",
@@ -290,7 +318,8 @@
       "example": {
         "good": "Your project is ready.",
         "bad": "The project has been created successfully."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "wq-01",
@@ -320,7 +349,8 @@
       "example": {
         "bad": "Provide your brand assets and requirements to configure the build.",
         "good": "Add your brand assets and tell Sticklight what you need."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-02",
@@ -342,7 +372,8 @@
       "example": {
         "bad": "Provide the relevant requirements to generate a build tailored to your specific context.",
         "good": "Add your requirements and Sticklight will tailor the project to your context."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-03",
@@ -369,7 +400,8 @@
       "example": {
         "bad": "Set this template as your project's baseline.",
         "good": "Start from this template and make it your own."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-04",
@@ -379,7 +411,8 @@
       "example": {
         "bad": "A build will be created tailored to your context.",
         "good": "Sticklight will build a project tailored to your context."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-05",
@@ -398,7 +431,8 @@
       "example": {
         "bad": "Feel free to add your brand assets. You can also specify your requirements.",
         "good": "Add your brand assets and requirements."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-06",
@@ -419,7 +453,8 @@
       "example": {
         "bad": "In order to create a build, provide your requirements. The project has been successfully created.",
         "good": "Add your requirements. Project created."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-07",
@@ -437,7 +472,8 @@
       "example": {
         "bad": "Adding a brand kit may help improve the output and could potentially make your project look more consistent.",
         "good": "Add a brand kit to keep your project visually consistent."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "wq-08",
@@ -456,7 +492,8 @@
       "example": {
         "bad": "Please enter your API key. Don't worry, you can always change this later.",
         "good": "Enter your API key. You can update it any time in Settings."
-      }
+      },
+      "reviewer_behavior": "silent"
     },
     {
       "id": "style-07",
@@ -466,7 +503,8 @@
       "example": {
         "good": "Select an element to start editing\n\n'Deleting this project is permanent. This action cannot be undone.'",
         "bad": "Select an element to start editing.\n\n'Deleting this project is permanent and cannot be undone'"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-08",
@@ -476,7 +514,8 @@
       "example": {
         "good": "You'll need to reconnect your GitHub account.",
         "bad": "You will need to reconnect your GitHub account."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "style-09",
@@ -486,7 +525,8 @@
       "example": {
         "good": "3 issues found across 2 screens.",
         "bad": "Three issues found across two screens."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "product-03",
@@ -496,7 +536,8 @@
       "example": {
         "good": "Built for creators who want to ship fast.",
         "bad": "Built for users who want to ship fast."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "product-04",
@@ -506,7 +547,8 @@
       "example": {
         "good": "Open the Chat panel in Sticklight.",
         "bad": "Open Sticklight's Chat panel."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "tone-05",
@@ -516,7 +558,8 @@
       "example": {
         "good": "Your site is live. (on publish)\n\nProject created. (on routine creation)",
         "bad": "Amazing! You just created a project! 🎉 (on routine creation)"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-09",
@@ -526,7 +569,8 @@
       "example": {
         "good": "Project name",
         "bad": "Enter the name of your project here..."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-10",
@@ -536,7 +580,8 @@
       "example": {
         "good": "Learn about Skills",
         "bad": "Learn more"
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-11",
@@ -546,7 +591,8 @@
       "example": {
         "good": "Your project is ready.",
         "bad": "Created."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "ux-12",
@@ -556,7 +602,8 @@
       "example": {
         "good": "Review: labels, tooltips, empty states, error messages, modals, Sticklight's chat responses.",
         "bad": "Review: marketing landing pages, onboarding emails, social posts."
-      }
+      },
+      "reviewer_behavior": "scope"
     },
     {
       "id": "inclusive-01",
@@ -566,7 +613,8 @@
       "example": {
         "good": "Invite your team to collaborate.",
         "bad": "Invite your guys to collaborate."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "inclusive-02",
@@ -576,7 +624,8 @@
       "example": {
         "good": "Run a confidence check before publishing.",
         "bad": "Run a sanity check before publishing."
-      }
+      },
+      "reviewer_behavior": "flag"
     },
     {
       "id": "inclusive-03",
@@ -586,7 +635,8 @@
       "example": {
         "good": "Add this domain to the allowlist.",
         "bad": "Add this domain to the whitelist."
-      }
+      },
+      "reviewer_behavior": "flag"
     }
   ]
 }
