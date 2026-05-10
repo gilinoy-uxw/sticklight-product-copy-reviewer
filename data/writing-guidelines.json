@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "source": "Sticklight Brand Voice & Tone Guidelines",
   "rules": [
     {
@@ -155,11 +155,11 @@
     {
       "id": "interaction-03",
       "category": "interaction",
-      "rule": "Assume the user is an expert. Use industry-standard terminology without defining it unless asked.",
-      "rationale": "The Expert Handshake: professionals expect to be treated as peers, not talked down to.",
+      "rule": "Write for a broad, non-technical audience. Sticklight creators include teachers, store owners, designers, and anyone who builds with AI — not just developers. Use plain language that respects intelligence without assuming technical knowledge.",
+      "rationale": "Sticklight's audience is anyone who vibe codes. A teacher or store owner won't know what 'rem values' or 'breakpoints' mean. Copy should be clear to a general audience without being condescending.",
       "example": {
-        "good": "Adjust the rem values for consistent spacing across breakpoints.",
-        "bad": "rem means 'relative em' — it's a unit for font sizes and spacing in CSS..."
+        "good": "Adjust the spacing to keep things consistent across screen sizes.",
+        "bad": "Adjust the rem values for consistent spacing across breakpoints."
       }
     },
     {
@@ -456,6 +456,136 @@
       "example": {
         "bad": "Please enter your API key. Don't worry, you can always change this later.",
         "good": "Enter your API key. You can update it any time in Settings."
+      }
+    },
+    {
+      "id": "style-07",
+      "category": "grammar_style",
+      "rule": "No period at the end of single sentences or fragments in UI copy. Use periods when copy contains 2 or more sentences.",
+      "rationale": "A period after a single-sentence label or tooltip adds unnecessary visual weight. Periods are needed to separate multiple sentences.",
+      "example": {
+        "good": "Select an element to start editing\n\n'Deleting this project is permanent. This action cannot be undone.'",
+        "bad": "Select an element to start editing.\n\n'Deleting this project is permanent and cannot be undone'"
+      }
+    },
+    {
+      "id": "style-08",
+      "category": "grammar_style",
+      "rule": "Use contractions throughout. 'It's', 'don't', 'you'll', 'can't' are preferred over their full forms.",
+      "rationale": "Contractions keep copy conversational and direct. Full forms sound stiff and formal, which conflicts with Sticklight's voice.",
+      "example": {
+        "good": "You'll need to reconnect your GitHub account.",
+        "bad": "You will need to reconnect your GitHub account."
+      }
+    },
+    {
+      "id": "style-09",
+      "category": "grammar_style",
+      "rule": "Always use numerals for numbers in UI copy. Never spell them out.",
+      "rationale": "Numerals are faster to scan in a UI context. Consistency avoids mixed patterns ('3 issues' and 'three screens' in the same product).",
+      "example": {
+        "good": "3 issues found across 2 screens.",
+        "bad": "Three issues found across two screens."
+      }
+    },
+    {
+      "id": "product-03",
+      "category": "product_language",
+      "rule": "When referring to users in the abstract (not second person), use 'creators'. Not 'users', 'builders', or 'people'.",
+      "rationale": "'Creators' reflects Sticklight's positioning — the product serves people who make things, regardless of their technical background.",
+      "example": {
+        "good": "Built for creators who want to ship fast.",
+        "bad": "Built for users who want to ship fast."
+      }
+    },
+    {
+      "id": "product-04",
+      "category": "product_language",
+      "rule": "Restructure copy to avoid possessives with product names. Never use 'Sticklight's' or 'Pink's'.",
+      "rationale": "Possessives with product names can sound awkward and are inconsistent with how the product refers to itself.",
+      "example": {
+        "good": "Open the Chat panel in Sticklight.",
+        "bad": "Open Sticklight's Chat panel."
+      }
+    },
+    {
+      "id": "tone-05",
+      "category": "tone",
+      "rule": "Celebratory and motivational copy is only appropriate at defined milestone moments: joining Sticklight, launching a website, and adding a Skill. All other interactions use the functional tone.",
+      "rationale": "Milestone moments deserve recognition. Applying celebratory copy to routine actions dilutes it and makes the product feel performative.",
+      "example": {
+        "good": "Your site is live. (on publish)\n\nProject created. (on routine creation)",
+        "bad": "Amazing! You just created a project! 🎉 (on routine creation)"
+      }
+    },
+    {
+      "id": "ux-09",
+      "category": "ux_writing",
+      "rule": "Placeholder text in input fields must be a short label in sentence case with no period. Do not use full sentences or examples as placeholders.",
+      "rationale": "Short labels set clear expectations about what the field is for without cluttering the input with unnecessary copy.",
+      "example": {
+        "good": "Project name",
+        "bad": "Enter the name of your project here..."
+      }
+    },
+    {
+      "id": "ux-10",
+      "category": "ux_writing",
+      "rule": "Use descriptive link text. Avoid 'Learn more', 'Click here', or 'Read more'. The link text should describe the destination or action.",
+      "rationale": "Vague link text fails accessibility standards and leaves creators guessing about where they'll land.",
+      "example": {
+        "good": "Learn about Skills",
+        "bad": "Learn more"
+      }
+    },
+    {
+      "id": "ux-11",
+      "category": "ux_writing",
+      "rule": "Write success and confirmation states as short sentences, not single past-tense verbs.",
+      "rationale": "A short sentence gives the creator meaningful confirmation and keeps the voice human. Bare verbs feel terse and system-generated.",
+      "example": {
+        "good": "Your project is ready.",
+        "bad": "Created."
+      }
+    },
+    {
+      "id": "ux-12",
+      "category": "ux_writing",
+      "rule": "This skill covers in-product UI copy and conversational design — what Sticklight says in the Chat panel. It does not cover marketing pages, emails, or social copy.",
+      "rationale": "In-product copy and conversational responses follow the same voice rules. Marketing copy operates under different standards and is out of scope.",
+      "example": {
+        "good": "Review: labels, tooltips, empty states, error messages, modals, Sticklight's chat responses.",
+        "bad": "Review: marketing landing pages, onboarding emails, social posts."
+      }
+    },
+    {
+      "id": "inclusive-01",
+      "category": "inclusive_language",
+      "rule": "Use gender-neutral language. Avoid 'guys' — use 'creators', 'everyone', or 'the team'. Use 'they/them' as the default singular pronoun.",
+      "rationale": "Sticklight is built for everyone. Gendered language excludes part of the audience.",
+      "example": {
+        "good": "Invite your team to collaborate.",
+        "bad": "Invite your guys to collaborate."
+      }
+    },
+    {
+      "id": "inclusive-02",
+      "category": "inclusive_language",
+      "rule": "Avoid ableist terms. Replace: 'sanity check' → 'confidence check', 'blind spot' → 'gap', 'dumb down' → 'simplify', 'crazy' → 'unexpected' or cut.",
+      "rationale": "Ableist language is exclusionary and unprofessional. Plain alternatives are clearer and more direct anyway.",
+      "example": {
+        "good": "Run a confidence check before publishing.",
+        "bad": "Run a sanity check before publishing."
+      }
+    },
+    {
+      "id": "inclusive-03",
+      "category": "inclusive_language",
+      "rule": "Avoid terms with problematic historical connotations. Replace: 'blacklist/whitelist' → 'blocklist/allowlist', 'master/slave' → 'primary/secondary' or 'main/replica'.",
+      "rationale": "These terms carry unnecessary historical weight. Neutral alternatives are widely accepted and equally clear.",
+      "example": {
+        "good": "Add this domain to the allowlist.",
+        "bad": "Add this domain to the whitelist."
       }
     }
   ]
