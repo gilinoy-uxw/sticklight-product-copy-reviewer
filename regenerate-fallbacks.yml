@@ -1,0 +1,35 @@
+name: Regenerate fallbacks
+
+on:
+  push:
+    paths:
+      - 'data/glossary.json'
+      - 'data/pink-glossary.json'
+      - 'data/writing-guidelines.json'
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate fallback constants in ui.html
+        run: python3 .github/scripts/regenerate_fallbacks.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git diff --quiet ui.html || (
+            git add ui.html &&
+            git commit -m "chore: regenerate fallback constants from JSON"
+          )
+
+      - name: Push
+        uses: ad-m/github-push-action@v0.8.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref_name }}
