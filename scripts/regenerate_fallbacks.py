@@ -9,7 +9,7 @@ Run automatically by the 'Regenerate fallbacks' GitHub Action whenever a data fi
 """
 
 import json
-import re
+
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent.parent  # repo root
@@ -76,14 +76,33 @@ def escape_for_js_template_literal(s):
 
 
 def replace_constant(html, const_name, new_value):
-    """Replace const NAME = `...`; in the HTML string."""
+    """Replace const NAME = `...`; in the HTML string.
+    Uses a line-by-line approach to avoid catastrophic backtracking or
+    accidental large-span matches from the regex engine.
+    """
     escaped = escape_for_js_template_literal(new_value)
-    pattern = rf"(const {re.escape(const_name)} = `)([^`]|\\`)*(`;\n)"
-    replacement = f"const {const_name} = `{escaped}`;\n"
-    result, count = re.subn(pattern, replacement, html, count=1, flags=re.DOTALL)
-    if count == 0:
+    marker_open = f"const {const_name} = `"
+    marker_close = "`;\n"
+
+    start = html.find(marker_open)
+    if start == -1:
         raise ValueError(f"Could not find constant: {const_name}")
-    return result
+
+    # Walk forward from after the opening backtick to find the closing `;\n
+    content_start = start + len(marker_open)
+    pos = content_start
+    while pos < len(html):
+        if html[pos] == '\\':
+            pos += 2  # skip escaped character
+            continue
+        if html[pos:pos + 3] == '`;\n':
+            end = pos + 3
+            break
+        pos += 1
+    else:
+        raise ValueError(f"Could not find closing backtick for: {const_name}")
+
+    return html[:start] + f"const {const_name} = `{escaped}`;\n" + html[end:]
 
 
 def main():
